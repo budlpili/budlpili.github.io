@@ -119,6 +119,7 @@ button:focus {
     display: flex;
     gap: 4px;
 }
+
 .header__menu__item {
     display: block;
     padding: 8px 16px;
@@ -424,19 +425,33 @@ button:focus {
 }
 
 /* Arrow up */
-.arrow-up {
-    background-color: var(--color-primary);
+#arrow-up {
     position: fixed;
     bottom: 3rem;
     right: 3rem;
-    font-size: 3rem;
-    width: 4.5rem;
     height: 4.5rem;
-    border-radius: 100%;
-    text-align: center;
-    box-shadow: 5px 5px 0px 0px var(--color-accent);
+    width: 4.5rem;
+    display: none;
+    place-items: center;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
     transition: opacity 300ms ease-in;
 }
+
+#arrow-up-value {
+    display: block;
+    height: calc(100% - 15px);
+    width: calc(100% - 15px);
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 2.5rem;
+    color: var(--color-black);
+}
+
+
 
 /* Footer */
 #contact {

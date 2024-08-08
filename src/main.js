@@ -19,7 +19,7 @@ document.addEventListener('scroll', () => {
 });
 
 // Arrow up 버튼을 아래로 스크롤시 투명하게 처리함
-const arrowUp = document.querySelector('.arrow-up');
+const arrowUp = document.querySelector('#arrow-up');
 document.addEventListener('scroll', () => {
   if(window.scrollY > homeHeight / 2) {
     arrowUp.style.opacity = 1;
@@ -27,6 +27,29 @@ document.addEventListener('scroll', () => {
     arrowUp.style.opacity = 0;
   }
 });
+
+// Arrow up 테두리 
+  let calcScrollValue = () => {
+  let scrollProgress = document.getElementById("arrow-up");
+  let progressValue = document.getElementById("arrow-up-value");
+  let pos = document.documentElement.scrollTop;
+  let calcHeight =
+    document.documentElement.scrollHeight -
+    document.documentElement.clientHeight;
+  let scrollValue = Math.round((pos * 100) / calcHeight);
+  if (pos > 100) {
+    scrollProgress.style.display = "grid";
+  } else {
+    scrollProgress.style.display = "none";
+  }
+  scrollProgress.addEventListener("click", () => {
+    document.documentElement.scrollTop = 0;
+  });
+  scrollProgress.style.background = `conic-gradient(#03e8f9 ${scrollValue}%, #d7d7d7 ${scrollValue}%)`;
+  };
+
+  window.onscroll = calcScrollValue;
+  window.onload = calcScrollValue;
 
 // Navbar 토글버튼 클릭 처리
 const navbarMenu = document.querySelector('.header__menu');
