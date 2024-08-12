@@ -125,7 +125,6 @@ button:focus {
     display: none;
     color: var(--color-white);
     font-size: 1.5rem;
-    
     cursor: pointer;
 }
 
@@ -133,7 +132,6 @@ button:focus {
     display: flex;
     gap: 4px;
     font-size: 1rem;
-
 }
 
 .header__menu__item {
@@ -616,7 +614,6 @@ button:focus {
     }
 
     .header__nav {
-        margin-top: 3rem;
         width: 100%;
     }
 
