@@ -8,15 +8,15 @@
 // - 다수의 섹션이 동시에 보여진다면, 가장 첫번째 섹션을 선택
 // - 마지막 contact 섹션이 보여진다면, 그러면 가장 마지막 섹션을 선택
 const sectionIds = [
-  '#home', 
-  '#about', 
-  '#skills', 
-  '#work', 
-  '#testimonial', 
-  '#contact'
+  '#home',
+  '#about',
+  '#skills',
+  '#work',
+  '#testimonial',
+  '#contact',
 ];
 const sections = sectionIds.map((id) => document.querySelector(id));
-const navItems = sectionIds.map((id) => 
+const navItems = sectionIds.map((id) =>
   document.querySelector(`[href="${id}"]`)
 );
 
@@ -35,32 +35,27 @@ function observerCallback(entries) {
   entries.forEach((entry) => {
     const index = sectionIds.indexOf(`#${entry.target.id}`);
     visibleSections[index] = entry.isIntersecting;
-    selectLastOne = 
-      index === sectionIds.length - 1 &&  
+    selectLastOne =
+      index === sectionIds.length - 1 &&
       entry.isIntersecting &&
       entry.intersectionRatio >= 0.95;
   });
-  // console.log(visibleSections);
-  // console.log('무조건 라스트 섹션!', selectLastOne);
 
-  const navIndex = selectLastOne 
-    ? sectionIds.length - 1 
+  const navIndex = selectLastOne
+    ? sectionIds.length - 1
     : findFirstIntersecting(visibleSections);
-  // console.log(sectionIds[navIndex]);
-  
   selectNavItem(navIndex);
 }
 
 function findFirstIntersecting(intersections) {
   const index = intersections.indexOf(true);
-  return index >=0 ? index : 0
+  return index >= 0 ? index : 0;
 }
 
 function selectNavItem(index) {
-    //메뉴 선택하기
-    const navItem = navItems[index];
-    if(!navItem) return;
-    activeNavItem.classList.remove('active');
-    activeNavItem = navItem;
-    activeNavItem.classList.add('active');
+  const navItem = navItems[index];
+  if (!navItem) return;
+  activeNavItem.classList.remove('active');
+  activeNavItem = navItem;
+  activeNavItem.classList.add('active');
 }
