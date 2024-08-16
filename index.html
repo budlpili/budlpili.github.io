@@ -367,45 +367,62 @@
                 </ul>
             </div>
         </section>
-        <!-- Testimonials -->
+
+        <!-- Price -->
         <section id="testimonial" class="section max-container">
-            <h2 class="title">Testimonials</h2>
-            <p class="description">See what they say about me</p>
-            <ul class="testimonials">
-                <li class="testimonial">
-                    <img src="./images/testimonials/people1.webp" alt="people1" class="testimonial__img" />
-                    <div class="testimonial__bubble">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Ad alias sint aperiam tenetur doloremque voluptas officia
-                            veritatis iure vero ipsum, eveniet possimus dolorum itaque
-                            rem at assumenda numquam sed nam.
-                        </p>
-                        <p><a href="#" class="testimonial__bubble__name">James Kim</a> /Google</p>
+            
+            <h2 class="title">견적문의</h2>
+                <p>견적요청/상담문의 주시면 빠른 검토 후 피트백드리겠습니다.</p>
+            
+                <form method="" class="price__forms">
+            
+                    <div class="price__form form__01">
+                        <div class="price__input">
+                            <label class="input__title">이름</label>
+                            <input class="input__place" type="text" placeholder="이름을 입력해주세요">
+                        </div>
+                        <div class="price__input">
+                            <label class="input__title">연락처</label>
+                            <input class="input__place" type="tel" placeholder="연락처를 입력해주세요">
+                        </div>
+                        <div class="price__input">
+                            <label class="input__title">이메일</label>
+                            <input class="input__place" type="email" placeholder="이메일을 입력해주세요">
+                        </div>
+                        <div class="price__input">
+                            <label class="input__title">첨부파일</label>
+                            <input class="input__place" type="file">
+                        </div>
+                        <div class="price__input">
+                            <p class="form__comment">
+                                참고사이트를 남겨주시면 보다 정확한 견적이 가능합니다. 용량이 클경우
+                                <a href="mailto:help@gmail.com" class="mailto">help@gmail.com</a> 으로 메일 보내주세요.
+                            </p>
+                        </div>
                     </div>
-                </li>
-                <li class="testimonial">
-                    <img src="./images/testimonials/people2.webp" alt="people2" class="testimonial__img" />
-                    <div class="testimonial__bubble">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Ad alias sint aperiam tenetur doloremque voluptas officia
-                            veritatis iure vero ipsum, eveniet possimus dolorum itaque
-                            rem at assumenda numquam sed nam.
-                        </p>
-                        <p><a href="#" class="testimonial__bubble__name">Anna Jin</a> /Samsung</p>
+            
+                    <div class="price__form form__02">
+                        <div>
+                            <label class="input__title">문의내용</label>
+                            <textarea class="textarea__place" placeholder="문의하실 내용을 입력해주세요."></textarea>
+                        </div>
+                        
+                        <p class="input__title">개인정보 수집 및 이용 동의</p>
+
+                        <div class="agree__box">
+                            <div>
+                                <input class="input__checkbox" type="checkbox">
+                                <span>개인정보 수집 및 이용에 동의합니다.</span>
+                            </div>
+                            <div>
+                            <a href="#">전문보기</a>
+                            </div>
+                        </div>
+
+                        <button class="price__btn"><a href="#">견적문의하기</a></button>
+            
                     </div>
-                </li>
-                <li class="testimonial">
-                    <img src="./images/testimonials/people3.webp" alt="people3" class="testimonial__img" />
-                    <div class="testimonial__bubble">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Ad alias sint aperiam tenetur doloremque voluptas officia
-                            veritatis iure vero ipsum, eveniet possimus dolorum itaque
-                            rem at assumenda numquam sed nam.
-                        </p>
-                        <p><a href="#" class="testimonial__bubble__name">James Kim</a> /Google</p>
-                    </div>
-                </li>
-            </ul>
+                </form>
         </section>
 
         <!-- Arrow Up -->
