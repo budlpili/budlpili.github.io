@@ -3,6 +3,7 @@
     /* App Colors */
     --color-primary: var(--color-black);
     --color-primary-variant: var(--color-gray);
+    --color-primary-variant-2: var(--color-light-gray);
     --color-accent: var(--color-blue);
     --color-accent-variant: var(--color-orange);
     --color-text: var(--color-white);
@@ -19,6 +20,7 @@
     --color-blue: #03e8f9;
     --color-orange: #fd6413;
     --color-gray: #1b1e26;
+    --color-light-gray: #b4b7bf;
 
     /* Size */
     --size-max-width: 1200px;
@@ -607,7 +609,7 @@ button:focus {
     display: flex;
     align-items: center;
     gap:0.8rem;
-    margin: 1.5rem 0;
+    margin-bottom: 1rem;
 }
 
 .footer__logo__img {
@@ -616,20 +618,24 @@ button:focus {
 }  
 
 .footer__logo__title {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 600;
 }
 
 .footer__brand {
-    padding-bottom: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.footer__brand__lists:last-child{
+    margin-top: 1rem;
 }
 
 .footer__brand__list {
     display: flex;
-    justify-content: start;
-    align-content: center;
-    gap: 0.8rem;
-    margin-bottom: 0.6rem;
+    align-items: center;
+    gap: .5rem;
     font-size: 0.8rem;
 }
 
@@ -658,11 +664,12 @@ button:focus {
 
 .contact__link {
     display: block;
+    color: var(--color-primary-variant-2);
     margin-bottom: 0.3rem;
+
     transition: color 250ms ease-in;
 }
 .contact__link--icon {
-    font-size: 1.5rem;
     transition: color 250ms ease-in;
 }
 
@@ -678,8 +685,8 @@ button:focus {
 .footer__email__field {
     width: 100%;
     color: var(--color-primary);
-    margin-bottom: 2rem;
-    padding: 1rem;
+    margin-bottom: 1rem;
+    padding: 0.6rem;
     border-bottom: 1px solid var(--color-white);
     border-radius: 4px;
     background-color: var(--color-white);
@@ -698,25 +705,29 @@ button:focus {
 
 .footer__form__btn {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: .6rem;
+    right: .3rem;
     bottom: 2rem;
-    font-size: 20px;  
+    font-size: 1rem;  
 }
 
-.contact__link__wrapper {
+.footer__bottom {
     display: flex;
-
-    gap: 1.2rem;
+    width: 100%;
+    margin-top: 3rem;
+    font-size: .7rem;
+    font-weight: 400;
+    color: var(--color-light-gray);
 }
 
 .copyright {
+    width: 100%;
     text-align: center;
-    padding: 2rem 0 0 0;
 }
 
 .copyright__link {
     display: inline-block;
+
 }
 
 
@@ -969,36 +980,59 @@ button:focus {
 }
 
 @media screen and (max-width: 480px) {
-    
-    .footer__top {
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(4, 1fr);
-        gap: 0rem;
+
+    .header__logo__title {
+        display: none;
     }
 
+    .home__avatar {
+        width: 180px;
+        height: 180px;
+    }
+
+    .home__title {
+        font-size: 1.5rem;
+    }
+
+    .home__description {
+        font-size: 0.9rem;
+    }
+
+
+
+
+
+
+
+    .footer__top {
+        gap: 2rem;
+    }
+    
     .footer__logo__title {
         font-size: 1.25rem;
         font-weight: 600;
     }
 
     .footer__brand__list {
-        font-size: 0.8rem;
+        font-size: 0.7rem;
     }
 
     .brand__links {
-        font-size: 0.8rem;
-        
+        gap: 1rem;
     }
 
     .contact__links {
         padding: 0rem 0;
-        text-align: center;
+    }
+    
+    .contact__title {
+        display: inline-block;
+        font-size: .9rem;
+        font-weight: 600;
+        margin-bottom: 0.8rem;
     }
 
-
-    .contact__link__wrapper {
-        display: flex;
-        gap: 1rem;
+    .contact__link {
         font-size: .8rem;
     }
 
@@ -1024,26 +1058,7 @@ button:focus {
 }
 
 @media screen and (max-width: 320px) {
-    .max-container {
-        margin: auto;
-    }
 
-    .header__logo__title {
-        display: none;
-    }
-
-    .home__avatar {
-        width: 180px;
-        height: 180px;
-    }
-
-    .home__title {
-        font-size: 1.5rem;
-    }
-
-    .home__description {
-        font-size: 0.9rem;
-    }
 
 
 }
