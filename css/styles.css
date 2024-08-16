@@ -184,7 +184,7 @@ button:focus {
 \*-----------------------------------*/
 #home {
     position: relative;
-    min-height: 90vh;
+    min-height: 80vh;
     background-color: var(--color-primary);
     background-image: var(--home-bg-svg);
     color: var(--color-text);
