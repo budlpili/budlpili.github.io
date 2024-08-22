@@ -25,7 +25,6 @@
   <!-- SCRIPT -->
   <script type="module" src="./src/main.js" defer></script>
   <script type="module" src="./src/navbar.js" defer></script>
-  <script type="module" src="./src/login.js" defer></script>
   <!-- CSS -->
   <link rel="stylesheet" href="./css/styles.css">
 </head>
@@ -39,7 +38,7 @@
       <h1 class="header__logo__title"><a href="index.html">NEXPARAN</a></h1>
     </div>
 
-    <nav class="header__nav  besides">
+    <nav class="header__nav besides">
       <ul class="header__menu">
         <li><a class="header__menu__item active" href="#home">Home</a></li>
         <li><a class="header__menu__item" href="#portfolio">포트폴리오</a></li>
@@ -128,37 +127,44 @@
           <a href="index.html"><span>Home</span></a>
         </li>
         <li class="breadcrumb">
-          <span>로그인 / 가입하기</span>
+          <span>Sign Up</span>
         </li>
       </ul>
     </div>
     <!-- breadcrumb end -->
 
-    <!-- Log_in Sign_up start -->
-    <section class="login__section max-container">
-      <div class="form__login signup">
-        <div class="form__header">
-          <div class="show__signup">가입하기</div>
-          <div class="show__signin">로그인</div>
-          <div class="show__reset">비밀번호찾기</div>
+    <!-- Sign__in start -->
+    <section class="sign__section">
+      <!-- Sign_up -->
+      <div class="sign__up__container active">
+        <h2 class="sign__title">Sign Up</h2>
+        <form action="" class="sign__form">
+          <div class="sign__input">
+            <label class="input__title">이름</label>
+            <input class="input__place" type="text" placeholder="이름을 입력해주세요">
+          </div>
+            <div class="sign__input">
+              <label class="input__title">이메일</label>
+              <input class="input__place" type="email" placeholder="이메일을 입력해주세요">
+          </div>
+            <div class="sign__input">
+              <label class="input__title">비밀번호</label>
+              <input class="input__place" type="password" placeholder="비밀번호를 입력해주세요">
+          </div>
+          <div class="agree__view__box">
+            <div>
+                <input class="input__checkbox" type="checkbox">
+                <span>개인정보 수집 및 이용에 동의합니다.</span>
+            </div>
+            <div>
+              <a class="view__doc" href="#">전문보기</a>
+            </div>
         </div>
-        <div class="arrow"></div>
-        <div class="form__elements">
-          <div class="form__element">
-            <input class="input__place--orange" type="text" placeholder="이름을 입력해주세요">
-          </div>
-          <div class="form__element">
-            <input class="input__place--orange" type="password" placeholder="비밀번호를 입력해주세요">
-          </div>
-          <div class="form__element">
-            <input class="input__place--orange" type="password" placeholder="이메일을 입력해주세요">
-          </div>
-          <div class="form__element">
-            <button id="submit__btn" class="login__btn">로그인</button>
-          </div>
-        </div>
+
+        </form>
+        <button class="sign__button"><a class="sign__btn" href="#!">SIGN UP</a></button>
       </div>
-      
+
     </section>
 
 

@@ -25,7 +25,7 @@
   <!-- SCRIPT -->
   <script type="module" src="./src/main.js" defer></script>
   <script type="module" src="./src/navbar.js" defer></script>
-  <script type="module" src="./src/login.js" defer></script>
+  <script type="module" src="./src/counter.js" defer></script>
   <!-- CSS -->
   <link rel="stylesheet" href="./css/styles.css">
 </head>
@@ -39,7 +39,7 @@
       <h1 class="header__logo__title"><a href="index.html">NEXPARAN</a></h1>
     </div>
 
-    <nav class="header__nav  besides">
+    <nav class="header__nav besides">
       <ul class="header__menu">
         <li><a class="header__menu__item active" href="#home">Home</a></li>
         <li><a class="header__menu__item" href="#portfolio">포트폴리오</a></li>
@@ -128,41 +128,127 @@
           <a href="index.html"><span>Home</span></a>
         </li>
         <li class="breadcrumb">
-          <span>로그인 / 가입하기</span>
+          <span>Cart</span>
         </li>
       </ul>
     </div>
     <!-- breadcrumb end -->
 
-    <!-- Log_in Sign_up start -->
-    <section class="login__section max-container">
-      <div class="form__login signup">
-        <div class="form__header">
-          <div class="show__signup">가입하기</div>
-          <div class="show__signin">로그인</div>
-          <div class="show__reset">비밀번호찾기</div>
-        </div>
-        <div class="arrow"></div>
-        <div class="form__elements">
-          <div class="form__element">
-            <input class="input__place--orange" type="text" placeholder="이름을 입력해주세요">
+    <!-- start cart-section -->
+    <section id="cart">
+      <form class="cart__list" action="" method="post">
+        <table class="cart__table">
+          <thead>
+            <tr>
+              <th class="product__remove">&nbsp;</th>
+              <th class="product__thumbnail">&nbsp;</th>
+              <th class="product__name">제품명</th>
+              <th class="product__price">가격</th>
+              <th class="product__quantity">개수</th>
+              <th class="product__subtotal">합계금액</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="cart__single">
+              <td class="product__remove">
+                <a href="#!" class="remove__btn" title="Remove this item">&times;</a>
+              </td>
+              <td class="product__thumbnail">
+                <a href="#!">
+                  <img class="thumbnail__img" src="images/product/img_3.png" alt="#!" />
+                </a>
+              </td>
+              <td class="product__name" data-title="Product">
+                <a href="#!"><p class="product__title">TV 25인치</p></a>
+              </td>
+
+              <td class="product__price" data-title="Price">
+                <span>&#x20A9;</span> <span>165,000</span>
+              </td>
+              <td class="product__quantity" data-title="Quantity">
+                <div class="quantity">
+                  <span class="minus">-</span>
+                  <span class="counter"></span>
+                  <span class="plus">+</span>
+                </div>
+              </td>
+              <td class="product__subtotal" data-title="Total">
+                <span>&#x20A9;</span> 
+                <span>330,000</span>
+              </td>
+            </tr>
+            <tr class="cart__single">
+              <td class="product__remove">
+                <a href="#!" class="remove__btn" title="Remove this item">&times;</a>
+              </td>
+              <td class="product__thumbnail">
+                <a href="#!">
+                  <img class="thumbnail__img" src="images/product/img_2.png" alt="#!" />
+                </a>
+              </td>
+              <td class="product__name" data-title="Product">
+                <a href="#!"><p class="product__title">해드셋</p></a>
+              </td>
+
+              <td class="product__price" data-title="Price">
+                <span>&#x20A9;</span> <span>122,000</span>
+              </td>
+              <td class="product__quantity" data-title="Quantity">
+                <div class="quantity">
+                  <span class="minus">-</span>
+                  <span class="counter"></span>
+                  <span class="plus">+</span>
+                </div>
+              </td>
+              <td class="product__subtotal" data-title="Total">
+                <span>&#x20A9;</span> 
+                <span>330,000</span>
+              </td>
+            </tr>
+            
+            
+            <!-- 쿠폰, btn  -->
+            <tr>
+              <td colspan="6" class="cart__actions">
+                <div class="coupon">
+                  <label for="coupon__code">Coupon:</label>
+                  <input type="text" name="coupon__code" class="input__text" id="coupon__code" value=""
+                    placeholder="쿠폰 번호" />
+                  <button class="coupon__btn" type="submit">
+                    <a class="btn__text">적용하기</a>
+                  </button>
+                </div>
+
+                <button class="coupon__btn" type="submit">
+                  <a class="btn__text">UPDATE CART</a>
+                </button>
+
+              </td>
+            </tr>
+
+          </tbody>
+        </table>
+      </form>
+
+      <!-- cart_total -->
+      <h3 class="cart__title">Cart Totals</h3>
+      <form class="cart__totals">
+        <div>총 합계금액 :</div>
+        <div data-title="Total">
+            <strong>
+              <span class="prince__symbol">&#x20A9;</span>
+              <span>430,000</span>
+            </strong>
           </div>
-          <div class="form__element">
-            <input class="input__place--orange" type="password" placeholder="비밀번호를 입력해주세요">
-          </div>
-          <div class="form__element">
-            <input class="input__place--orange" type="password" placeholder="이메일을 입력해주세요">
-          </div>
-          <div class="form__element">
-            <button id="submit__btn" class="login__btn">로그인</button>
-          </div>
-        </div>
+      </form>
+      <div class="check__out">
+        <button class="check__out__btn" type="submit">
+          <a class="btn__text">결제하기</a>
+        </button>
       </div>
       
     </section>
-
-
-    <!-- end Login section -->
+    <!-- end cart-section -->
 
 
     <!-- Arrow Up -->

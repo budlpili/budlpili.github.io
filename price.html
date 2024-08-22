@@ -25,7 +25,6 @@
   <!-- SCRIPT -->
   <script type="module" src="./src/main.js" defer></script>
   <script type="module" src="./src/navbar.js" defer></script>
-  <script type="module" src="./src/login.js" defer></script>
   <!-- CSS -->
   <link rel="stylesheet" href="./css/styles.css">
 </head>
@@ -36,20 +35,19 @@
   <header class="header">
     <div class="header__logo">
       <img class="header__logo__img" src="./images/futterfly-re-bg.png" alt="logo" />
-      <h1 class="header__logo__title"><a href="index.html">NEXPARAN</a></h1>
+      <h1 class="header__logo__title"><a href="#">NEXPARAN</a></h1>
     </div>
-
-    <nav class="header__nav  besides">
+  
+    <nav class="header__nav">
       <ul class="header__menu">
-        <li><a class="header__menu__item active" href="#home">Home</a></li>
-        <li><a class="header__menu__item" href="#portfolio">포트폴리오</a></li>
-        <li><a class="header__menu__item" href="#about">About</a></li>
-        <li><a class="header__menu__item" href="#skills">Skills</a></li>
-        <li><a class="header__menu__item" href="#price">견적문의</a></li>
-        <li><a class="header__menu__item" href="#contact">Contact</a></li>
+        <li><a class="header__menu__item active" href="index.html">홈</a></li>
+        <li><a class="header__menu__item" href="portfolio.html">포트폴리오</a></li>
+        <li><a class="header__menu__item" href="production_line.html">제작안내</a></li>
+        <li><a class="header__menu__item" href="price.html">견적문의</a></li>
+        <li><a class="header__menu__item" href="customer.html">고객센터</a></li>
       </ul>
     </nav>
-
+  
     <div class="header__icon__wrap">
       <a class="header__icon" href="sign_in.html"><i class="fa-solid fa-user"></i></a>
       <a class="header__icon" href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
@@ -57,67 +55,64 @@
         <i class="fa-solid fa-bars"></i>
       </button>
     </div>
-
+  
   </header>
-
+  
   <!--- #SIDEBAR -->
-
-  <div id="sidebar">
-
+    <div id="sidebar">
+  
     <button class="nav__toggles toggle__close" aria-label="close menu">
       <i class="fa-solid fa-x" name="close-outline" aria-hidden="true"></i>
     </button>
-
+  
     <div class="sidebar__wrapper"></div>
-
+  
     <nav class="navbar">
       <ul class="navbar__list">
         <li class="navbar__item">
-          <a href="#home" class="navbar__link" data-nav-link>Home</a>
+          <a href="#home" class="navbar__link">홈</a>
         </li>
         <li class="navbar__item">
-          <a href="#about" class="navbar__link" data-nav-link>About</a>
+          <a href="#about" class="navbar__link">포트폴리오</a>
         </li>
         <li class="navbar__item">
-          <a href="#skills" class="navbar__link" data-nav-link>Skills</a>
+          <a href="#skills" class="navbar__link">제작안내</a>
         </li>
         <li class="navbar__item">
-          <a href="#work" class="navbar__link" data-nav-link>Work</a>
+          <a href="#work" class="navbar__link">견적문의</a>
         </li>
         <li class="navbar__item">
-          <a href="#testimonial" class="navbar__link" data-nav-link>Testimonial</a>
+          <a href="#testimonial" class="navbar__link">고객센터</a>
         </li>
-        <li class="navbar__item">
-          <a href="#contact" class="navbar__link" data-nav-link>Contact</a>
-        </li>
+  
       </ul>
     </nav>
-
+  
     <div class="sidebar__wrapper"></div>
-
+  
     <button class="cart__btn__wrap">
       <a class="cart__btn" href="#">장바구니</a>
     </button>
-
+  
     <div class="sidebar__wrapper"></div>
-
+  
     <ul class="sign__list">
       <li>
-        <p class="sign__btn__small">Sign in</p>
+        <p class="sign__title">Sign in</p>
       </li>
       <li>
-        <p class="sign__btn__small">Sign up</p>
+        <p class="sign__title">Sign up</p>
       </li>
     </ul>
   </div>
-
+  
   <div class="overlay" data-overlay data-nav-toggler></div>
 
   <main>
     <!-- Home -->
     <section id="home">
       <div class="home__container max-container">
-        
+
       </div>
     </section>
 
@@ -128,47 +123,99 @@
           <a href="index.html"><span>Home</span></a>
         </li>
         <li class="breadcrumb">
-          <span>로그인 / 가입하기</span>
+          <span>견적문의</span>
         </li>
       </ul>
     </div>
     <!-- breadcrumb end -->
 
-    <!-- Log_in Sign_up start -->
-    <section class="login__section max-container">
-      <div class="form__login signup">
-        <div class="form__header">
-          <div class="show__signup">가입하기</div>
-          <div class="show__signin">로그인</div>
-          <div class="show__reset">비밀번호찾기</div>
-        </div>
-        <div class="arrow"></div>
-        <div class="form__elements">
-          <div class="form__element">
-            <input class="input__place--orange" type="text" placeholder="이름을 입력해주세요">
-          </div>
-          <div class="form__element">
-            <input class="input__place--orange" type="password" placeholder="비밀번호를 입력해주세요">
-          </div>
-          <div class="form__element">
-            <input class="input__place--orange" type="password" placeholder="이메일을 입력해주세요">
-          </div>
-          <div class="form__element">
-            <button id="submit__btn" class="login__btn">로그인</button>
-          </div>
-        </div>
+    <!-- Price start -->
+    <section id="price" class="max-container">
+      <div class="top__container">
+        <h2 class="price__title">견적문의</h2>
+        <p class="price__description">견적요청/상담문의 주시면 빠른 검토 후 피트백드리겠습니다.</p>
       </div>
-      
+      <form method="" class="price__forms">
+        <div class="price__form">
+          <div class="price__input">
+            <label class="input__title">이름</label>
+            <input class="input__place" type="text" placeholder="이름을 입력해주세요">
+          </div>
+          <div class="price__input">
+            <label class="input__title">연락처</label>
+            <input class="input__place" type="tel" placeholder="연락처를 입력해주세요">
+          </div>
+          <div class="price__input">
+            <label class="input__title">이메일</label>
+            <input class="input__place" type="email" placeholder="이메일을 입력해주세요">
+          </div>
+          <div>
+            <label class="input__title">문의하실 서비스</label>
+            <div class="service__items">
+              <div class="service__item">
+                <input class="input__checkbox" type="checkbox">
+                <span class="service__text">홈페이지</span>
+              </div>
+              <div class="service__item">
+                <input class="input__checkbox" type="checkbox">
+                <span class="service__text">어플리케이션</span>
+              </div>
+              <div class="service__item">
+                <input class="input__checkbox" type="checkbox">
+                <span class="service__text">모바일</span>
+              </div>
+              <div class="service__item">
+                <input class="input__checkbox" type="checkbox">
+                <span class="service__text">반응형</span>
+              </div>
+              <div class="service__item">
+                <input class="input__checkbox" type="checkbox">
+                <span class="service__text">쇼핑몰</span>
+              </div>
+              <div class="service__item">
+                <input class="input__checkbox" type="checkbox">
+                <span class="service__text">리뉴얼</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="price__input">
+            <label class="input__title">첨부파일</label>
+            <input class="input__place" type="file">
+          </div>
+          <div class="form__comments">
+            <p class="form__comment">
+              참고사이트를 남겨주시면 보다 정확한 견적이 가능합니다. 용량이 클경우
+              <a href="mailto:help@gmail.com" class="mailto">help@gmail.com</a> 으로 메일 보내주세요.
+            </p>
+          </div>
+          <div class="price__input">
+            <label class="input__title">문의내용</label>
+            <textarea class="textarea__place" placeholder="문의하실 내용을 입력해주세요."></textarea>
+          </div>
+          <div class="price__input">
+            <p class="input__title">개인정보 수집 및 이용 동의</p>
+          </div>
+          <div class="agree__box">
+            <div>
+              <input class="input__checkbox" type="checkbox">
+              <span>개인정보 수집 및 이용에 동의합니다.</span>
+            </div>
+            <div>
+              <a href="#">전문보기</a>
+            </div>
+          </div>
+        </div>
+      </form>
+      <button class="price__btn"><a href="#">견적문의하기</a></button>
     </section>
-
-
-    <!-- end Login section -->
+    <!-- end Price section -->
 
 
     <!-- Arrow Up -->
     <aside id="arrow">
       <a id="arrow-up" href="#home" title="back to top">
-          <span id="arrow-up-value">&#8593;</span>
+        <span id="arrow-up-value">&#8593;</span>
       </a>
     </aside>
 
@@ -286,7 +333,7 @@
       </p>
     </div>
   </footer>
-  
+
 </body>
 
 </html>

@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- SEO -->
+  <title>Mare&#39;s Site</title>
+  <meta name="description" content="마레의 사이트" />
+  <link rel="shortcut icon" href="./images/futterfly.ico" type="image/x-icon">
+  <!-- OG (Open Graph Data) -->
+  <meta property="og:title" content="마레의 사이트" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://budlpili.github.io/nexparan_home/" />
+  <meta property="og:image" content="https://budlpili.github.io/nexparan_home/images/og.webp" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet">
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/f2660783e0.js" crossorigin="anonymous"></script>
+  <!-- Typeit -->
+  <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+  <!-- SCRIPT -->
+  <script type="module" src="./src/main.js" defer></script>
+  <script type="module" src="./src/projects.js" defer></script>
+  <script type="module" src="./src/activ_menu.js" defer></script>
+  <script type="module" src="./src/type.js" defer></script>
+  <script type="module" src="./src/navbar.js" defer></script>
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/styles.css">
+
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="header__logo">
+      <img class="header__logo__img" src="./images/futterfly-re-bg.png" alt="logo" />
+      <h1 class="header__logo__title"><a href="#">NEXPARAN</a></h1>
+    </div>
+
+    <nav class="header__nav">
+      <ul class="header__menu">
+        <li><a class="header__menu__item active" href="index.html">홈</a></li>
+        <li><a class="header__menu__item" href="portfolio.html">포트폴리오</a></li>
+        <li><a class="header__menu__item" href="production_line.html">제작안내</a></li>
+        <li><a class="header__menu__item" href="price.html">견적문의</a></li>
+        <li><a class="header__menu__item" href="customer.html">고객센터</a></li>
+      </ul>
+    </nav>
+
+    <div class="header__icon__wrap">
+      <a class="header__icon" href="sign_in.html"><i class="fa-solid fa-user"></i></a>
+      <a class="header__icon" href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+      <button class="nav__toggles toggle__open" aria-label="open menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+
+  </header>
+
+  <!--- #SIDEBAR -->
+  <div id="sidebar">
+
+    <button class="nav__toggles toggle__close" aria-label="close menu">
+      <i class="fa-solid fa-x" name="close-outline" aria-hidden="true"></i>
+    </button>
+
+    <div class="sidebar__wrapper"></div>
+
+    <nav class="navbar">
+      <ul class="navbar__list">
+        <li class="navbar__item">
+          <a href="#home" class="navbar__link">홈</a>
+        </li>
+        <li class="navbar__item">
+          <a href="#about" class="navbar__link">포트폴리오</a>
+        </li>
+        <li class="navbar__item">
+          <a href="#skills" class="navbar__link">제작안내</a>
+        </li>
+        <li class="navbar__item">
+          <a href="#work" class="navbar__link">견적문의</a>
+        </li>
+        <li class="navbar__item">
+          <a href="#testimonial" class="navbar__link">고객센터</a>
+        </li>
+
+      </ul>
+    </nav>
+
+    <div class="sidebar__wrapper"></div>
+
+    <button class="cart__btn__wrap">
+      <a class="cart__btn" href="#">장바구니</a>
+    </button>
+
+    <div class="sidebar__wrapper"></div>
+
+    <ul class="sign__list">
+      <li>
+        <p class="sign__title">Sign in</p>
+      </li>
+      <li>
+        <p class="sign__title">Sign up</p>
+      </li>
+    </ul>
+  </div>
+
+  <div class="overlay" data-overlay data-nav-toggler></div>
+
+  <!-- Main -->
+  <main>
+    <!-- Home -->
+    <section id="home">
+      <div class="home__container max-container">
+
+      </div>
+    </section>
+
+    <!-- breadcrumb start -->
+    <div class="breadcrumb__container">
+      <ul class="breadcrumbs">
+        <li class="breadcrumb">
+          <a href="index.html"><span>Home</span></a>
+        </li>
+        <li class="breadcrumb">
+          <span>제작안내</span>
+        </li>
+      </ul>
+    </div>
+    <!-- breadcrumb end -->
+
+    <!-- Production wrap start -->
+    <section class="production__wrap">
+      <!-- Tap style -->
+      <div class="tabs">
+        <input id="tab__ing" type="radio" name="tab_item" checked>
+        <label class="tab_item" for="tab__ing">제작진행순서</label>
+    
+        <input id="tab__material" type="radio" name="tab_item">
+        <label class="tab_item" for="tab__material">준비사항</label>
+    
+        <div class="tab_content" id="tab__ing__content">
+          <!-- Production time line -->
+          <section id="production__line">
+            <div class="wrapper">
+              <div class="center-line">
+                <a href="#" class="scroll-icon"><i class="fas fa-caret-up"></i></a>
+              </div>
+              <div class="row row-1">
+                <section>
+                  <i class="icon fas fa-home"></i>
+                  <div class="details">
+                    <div class="detail__title">
+                      <span>1. 제작의뢰</span>
+                    </div>
+                    <div class="detail__subtitle">
+                      <span>소요일:</span>
+                      <span>00일</span>
+                    </div>
+                  </div>
+                  <p>
+                    전화 또는 홈페이지의 견적 문의를 통해 제작을 의뢰합니다..</p>
+                  <div class="bottom">
+                    <a href="#!" hidden>Read more</a>
+                  </div>
+                </section>
+              </div>
+              <div class="row row-2">
+                <section>
+                  <i class="icon fas fa-star"></i>
+                  <div class="details">
+                    <div class="detail__title">
+                      <span>2. 견적산출</span>
+                    </div>
+                    <div class="detail__subtitle">
+                      <span>소요일:</span>
+                      <span>00일</span>
+                    </div>
+                  </div>
+                  <p>
+                    홈페이지의 기능과 디자인에 대해 설명을 듣고 견적을 산출합니다.
+                  </p>
+                  <div class="bottom">
+                    <a href="#!" hidden>Read more</a>
+                  </div>
+                </section>
+              </div>
+              <div class="row row-1">
+                <section>
+                  <i class="icon fas fa-rocket"></i>
+                  <div class="details">
+                    <div class="detail__title">
+                      <span>3. 견적 검토 및 계약</span>
+                    </div>
+                    <div class="detail__subtitle">
+                      <span>소요일:</span>
+                      <span>00일</span>
+                    </div>
+                  </div>
+                  <p>
+                    책정된 견적 확인 및 검토 후, 계약서를 작성합니다. 착수금일 입금합니다.
+                  </p>
+                  <div class="bottom">
+                    <a href="#!" hidden>Read more</a>
+                  </div>
+                </section>
+              </div>
+              <div class="row row-2">
+                <section>
+                  <i class="icon fas fa-globe"></i>
+                  <div class="details">
+                    <div class="detail__title">
+                      <span>4. 자료전달</span>
+                    </div>
+                    <div class="detail__subtitle">
+                      <span>소요일:</span>
+                      <span>00일</span>
+                    </div>
+                  </div>
+                  <p>
+                    홈페이지에 필요한 자료를 전달합니다.
+                  </p>
+                  <div class="bottom">
+                    <a href="#!" hidden>Read more</a>
+                  </div>
+                </section>
+              </div>
+              <div class="row row-1">
+                <section>
+                  <i class="icon fas fa-paper-plane"></i>
+                  <div class="details">
+                    <div class="detail__title">
+                      <span>5. 도메인 및 서버(호스팅) 셋팅</span>
+                    </div>
+                    <div class="detail__subtitle">
+                      <span>소요일:</span>
+                      <span>00일</span>
+                    </div>
+                  </div>
+                  <p>
+                    도메인(홈페이지 주소. 예 : www.nexparan.co.kr)과 서버(호스팅)를 셋팅합니다.
+                  </p>
+                  <div class="bottom">
+                    <a href="#!" hidden>Read more</a>
+                  </div>
+                </section>
+              </div>
+              <div class="row row-2">
+                <section>
+                  <i class="icon fas fa-map-marker-alt"></i>
+                  <div class="details">
+                    <div class="detail__title">
+                      <span>6. 디자인 시안 제작</span>
+                    </div>
+                    <div class="detail__subtitle">
+                      <span>소요일:</span>
+                      <span>00일</span>
+                    </div>
+                  </div>
+                  <p>
+                    메인(홈 또는 첫) 페이지 디자인을 제작합니다. 순서 중 가장 많은 시간이 소요 및 할애 됩니다.
+                  </p>
+                  <div class="bottom">
+                    <a href="#!" hidden>Read more</a>
+                  </div>
+                </section>
+              </div>
+              <div class="row row-1">
+                <section>
+                  <i class="icon fas fa-pen-to-square"></i>
+                  <div class="details">
+                    <div class="detail__title">
+                      <span>7. 시안 수정 및 보완</span>
+                    </div>
+                    <div class="detail__subtitle">
+                      <span>소요일:</span>
+                      <span>00일</span>
+                    </div>
+                  </div>
+                  <p>
+                    시안을 정한 후 수정과 보완을 거쳐 디자인을 확정합니다. 수정 횟수는 유형별로 최대 3회까지 가능합니다.
+                  </p>
+                  <div class="bottom">
+                    <a href="#!" hidden>Read more</a>
+                  </div>
+                </section>
+              </div>
+              <div class="row row-2">
+                <section>
+                  <i class="icon fa-brands fa-readme"></i>
+                  <div class="details">
+                    <div class="detail__title">
+                      <span>8. 서브 시안 제작</span>
+                    </div>
+                    <div class="detail__subtitle">
+                      <span>소요일:</span>
+                      <span>00일</span>
+                    </div>
+                  </div>
+                  <p>
+                    메인페이지 외 제작되는 페이지에 대해 디자인을 제작합니다.
+                  </p>
+                  <div class="bottom">
+                    <a href="#!" hidden>Read more</a>
+                  </div>
+                </section>
+              </div>
+              <div class="row row-1">
+                <section>
+                  <i class="icon fas fa-seedling"></i>
+                  <div class="details">
+                    <div class="detail__title">
+                      <span>9. 웹사이트 제작 및 구축</span>
+                    </div>
+                    <div class="detail__subtitle">
+                      <span>소요일:</span>
+                      <span>00일</span>
+                    </div>
+                  </div>
+                  <p>
+                    수정 및 보완을 통해 확정된 디자인과 사전 협의된 기능을 기반으로 웹 사이트를 제작합니다.
+                  </p>
+                  <div class="bottom">
+                    <a href="#!" hidden>Read more</a>
+                  </div>
+                </section>
+              </div>
+              <div class="row row-2">
+                <section>
+                  <i class="icon fas fa-eraser"></i>
+                  <div class="details">
+                    <div class="detail__title">
+                      <span>10. 에러 수정 및 보완</span>
+                    </div>
+                    <div class="detail__subtitle">
+                      <span>소요일:</span>
+                      <span>00일</span>
+                    </div>
+                  </div>
+                  <p>
+                    제작 및 구축된 웹사이트의 에러 또는 보완 할 사항을 검토합니다.
+                  </p>
+                  <div class="bottom">
+                    <a href="#!" hidden>Read more</a>
+                  </div>
+                </section>
+              </div>
+              <div class="row row-1">
+                <section>
+                  <i class="icon fas fa-sun"></i>
+                  <div class="details">
+                    <div class="detail__title">
+                      <span>11. 사이트 오픈 및 계약 완료</span>
+                    </div>
+                    <div class="detail__subtitle">
+                      <span>소요일:</span>
+                      <span>00일</span>
+                    </div>
+                  </div>
+                  <p>
+                    잔금이 입금되면 포털 사이트에 등록이 진행되고, 정상 서비스가 이뤄집니다.
+                  </p>
+                  <div class="bottom">
+                    <a href="#!" hidden>Read more</a>
+                  </div>
+                </section>
+              </div>
+            </div>
+    
+          </section>
+        </div>
+        <!-- 준비사항 -->
+        <div class="tab_content" id="tab__material__content">
+          제작준비사항
+        </div>
+      </div>
+      <!-- Production wrap end -->
+    </section>
+    
+
+    
+    <!-- Arrow Up -->
+    <aside id="arrow">
+      <a id="arrow-up" href="#home" title="back to top">
+        <span id="arrow-up-value">&#8593;</span>
+      </a>
+    </aside>
+
+  </main>
+
+  <!-- Footer -->
+  <footer id="contact" class="section">
+    <div class="footer__top max-container">
+
+      <div class="footer__brand">
+        <div class="footer__title">
+          <img class="footer__logo__img" src="./images/futterfly-re-bg.png">
+          <a href="#" class="footer__logo__title">NEXPARAN</a>
+        </div>
+
+        <ul class="footer__brand__lists">
+          <li class="footer__brand__list">
+            <i class="fa-solid fa-location-dot"></i>
+            <address class="contact__link address">Korea, Lorem.</address>
+          </li>
+          <li class="footer__brand__list">
+            <i class="fa-solid fa-phone"></i>
+            <a href="tel:+1234567890" class="contact__link" target="_blank" title="tel">
+              +1234567890
+            </a>
+          </li>
+
+        </ul>
+        <ul class="footer__brand__lists">
+          <li class="footer__brand__list">
+            <ul class="brand__links">
+              <li>
+                <a href="#" class="contact__link--icon" target="_blank" title="my facebook link">
+                  <i class="fa-brands fa-facebook"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="contact__link--icon" target="_blank" title="my instagram link">
+                  <i class="fa-brands fa-square-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="contact__link--icon" target="_blank" title="my X-twitter link">
+                  <i class="fa-brands fa-x-twitter"></i>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+
+      </div>
+
+      <ul class="contact__links">
+
+        <li>
+          <p class="contact__title">Help & Information</p>
+        </li>
+
+        <li>
+          <a href="#" class="contact__link">Help & Contact Us</a>
+        </li>
+
+        <li>
+          <a href="#" class="contact__link">Returns & Refunds</a>
+        </li>
+
+        <li>
+          <a href="#" class="contact__link">Online Stores</a>
+        </li>
+
+        <li>
+          <a href="#" class="contact__link">Terms & Conditions</a>
+        </li>
+      </ul>
+
+      <ul class="contact__links">
+
+        <li>
+          <p class="contact__title">About Us</p>
+        </li>
+
+        <li>
+          <a href="#" class="contact__link">About Us</a>
+        </li>
+
+        <li>
+          <a href="#" class="contact__link">What We Do</a>
+        </li>
+
+        <li>
+          <a href="#" class="contact__link">FAQ Page</a>
+        </li>
+
+        <li>
+          <a href="#" class="contact__link">Contact Us</a>
+        </li>
+
+      </ul>
+
+      <div class="contact__links">
+        <p class="contact__title">Newsletter</p>
+        <form action="" class="footer__form">
+          <input class="footer__email__field" type="email" name="email_address" placeholder="Your email address"
+            required>
+          <button class="footer__form__btn" type="submit">
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p class="copyright">
+        &copy; 2024 All Rights Reserved by <a href="#" class="copyright-link">Nexparan</a>.
+      </p>
+    </div>
+  </footer>
+
+</body>
+
+</html>

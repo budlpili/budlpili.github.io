@@ -9,10 +9,10 @@
 // - 마지막 contact 섹션이 보여진다면, 그러면 가장 마지막 섹션을 선택
 const sectionIds = [
   '#home',
+  '#portfolio',
   '#about',
   '#skills',
-  '#work',
-  '#testimonial',
+  '#price',
   '#contact',
 ];
 const sections = sectionIds.map((id) => document.querySelector(id));

@@ -43,18 +43,17 @@
 
         <nav class="header__nav">
             <ul class="header__menu">
-                <li><a class="header__menu__item active" href="#home">Home</a></li>
-                <li><a class="header__menu__item" href="#about">About</a></li>
-                <li><a class="header__menu__item" href="#skills">Skills</a></li>
-                <li><a class="header__menu__item" href="#work">Work</a></li>
-                <li><a class="header__menu__item" href="#testimonial">Testimonial</a></li>
-                <li><a class="header__menu__item" href="#contact">Contact</a></li>
+                <li><a class="header__menu__item active" href="index.html">홈</a></li>
+                <li><a class="header__menu__item" href="portfolio.html">포트폴리오</a></li>
+                <li><a class="header__menu__item" href="production_line.html">제작안내</a></li>
+                <li><a class="header__menu__item" href="price.html">견적문의</a></li>
+                <li><a class="header__menu__item" href="customer.html">고객센터</a></li>
             </ul>
         </nav>
 
         <div class="header__icon__wrap">
             <a class="header__icon" href="login.html"><i class="fa-solid fa-user"></i></a>
-            <a class="header__icon" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            <a class="header__icon" href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
             <button class="nav__toggles toggle__open" aria-label="open menu">
                 <i class="fa-solid fa-bars"></i>
             </button>
@@ -75,23 +74,21 @@
         <nav class="navbar">
             <ul class="navbar__list">
                 <li class="navbar__item">
-                    <a href="#home" class="navbar__link" data-nav-link>Home</a>
+                    <a href="#home" class="navbar__link">홈</a>
                 </li>
                 <li class="navbar__item">
-                    <a href="#about" class="navbar__link" data-nav-link>About</a>
+                    <a href="#about" class="navbar__link">포트폴리오</a>
                 </li>
                 <li class="navbar__item">
-                    <a href="#skills" class="navbar__link" data-nav-link>Skills</a>
+                    <a href="#skills" class="navbar__link">제작안내</a>
                 </li>
                 <li class="navbar__item">
-                    <a href="#work" class="navbar__link" data-nav-link>Work</a>
+                    <a href="#work" class="navbar__link">견적문의</a>
                 </li>
                 <li class="navbar__item">
-                    <a href="#testimonial" class="navbar__link" data-nav-link>Testimonial</a>
+                    <a href="#testimonial" class="navbar__link">고객센터</a>
                 </li>
-                <li class="navbar__item">
-                    <a href="#contact" class="navbar__link" data-nav-link>Contact</a>
-                </li>
+                
             </ul>
         </nav>
 
@@ -105,17 +102,16 @@
 
         <ul class="sign__list">
             <li>
-                <p class="sign__title">Sign in</p>
+                <a class="sign__title" href="login.html">Sign in</a>
             </li>
             <li>
-                <p class="sign__title">Sign up</p>
+                <a class="sign__title" href="login.html">Sign up</a>
             </li>
         </ul>
     </div>
 
     <div class="overlay" data-overlay data-nav-toggler></div>
 
-    
     <!-- Main -->
     <main>
         <!-- Home -->
@@ -126,171 +122,30 @@
                     <h2 class="home__title" aria-label="Hello, I'm Dream Corder NEXPARAN">
                         Hello <br /> I&#39;m
                         <strong class="home__title--strong">Happy Coder</strong>
-                        ,</h2>br> NEXPARAN
+                        </h2>
                     </h2>
                     <p class="home__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, omnis.</p>
-                    <button><a class="home__contact__btn" href="#contact">Contact Me</a></button>
+                    <button hidden><a class="home__contact__btn" href="#contact">Contact Me</a></button>
                 </div>
             </div>
         </section>
-
-        <!-- About -->
-        <section id="about" class="section max-container">
-            <h2 class="title">About</h2>
-            <p class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Voluptates dolorem eius atque, corporis fugiat,
-                maxime accusamus unde velit quos at sapiente quae.
-                Harum alias corrupti deleniti quam, ratione reiciendis a.
-            </p>
-            <ul class="majors">
-                <li class="major">
-                    <i class="fa-brands fa-html5 major__icon"></i>
-                    <p class="major__title">Front-end</p>
-                    <p>HTML, CSS, JavaScript, Typescript, React, Vue, Web APIs</p>
-                </li>
-                <li class="major">
-                    <i class="fa-solid fa-mobile major__icon"></i>
-                    <p class="major__title">Mobile</p>
-                    <p>Android, iOS, React Native, Flutter, Java, Swift, Kotlin</p>
-                </li>
-                <li class="major">
-                    <i class="fa-solid fa-server major__icon"></i>
-                    <p class="major__title">Back-end</p>
-                    <p>Java, JavaScript, Go, NodeJs, Rest APIs, GraphQL</p>
-                </li>
-            </ul>
-            <!-- <ul class="jobs">
-                <li class="job">
-                    <img src="./images/jobs/google.png" alt="구글로고" />
-                    <div>
-                        <p class="job__name">Google as Senior Software Engineer</p>
-                        <p class="job__period">2019 Oct - Until now</p>
-                    </div>
-                </li>
-                <li class="job">
-                    <img src="./images/jobs/samsung.png" alt="삼성로고" />
-                    <div>
-                        <p class="job__name">Samsung as Software Engineer</p>
-                        <p class="job__period">2014 Sept - 2019 Oct </p>
-                    </div>
-                </li>
-            </ul> -->
-
-        </section>
-        <!-- Skills -->
-        <section id="skills" class="section">
+        <!-- portfolio -->
+        <section id="portfolio" class="section">
             <div class="max-container">
-                <h2 class="title">My Skills</h2>
-                <p class="description">Skills & Attributes</p>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    At nihil laboriosam sunt voluptatem nam facilis possimus.
-                    Hic, provident. Quae, recusandae quia aliquam nobis tempore
-                    accusamus ipsam corrupti! Voluptatibus, labore impedit.
-                </p>
-                <div class="skills">
-                    <section class="skills__coding">
-                        <h3 class="skills__title">Coding Skill</h3>
-                        <ul class="skills_content">
-                            <li class="bar">
-                                <div class="bar__metadata">
-                                    <span>HTML</span><span>98%</span>
-                                </div>
-                                <div class="bar__bg">
-                                    <div class="bar__value" style="width:98%"></div>
-                                </div>
-                            </li>
-                            <li class="bar">
-                                <div class="bar__metadata">
-                                    <span>CSS</span><span>90%</span>
-                                </div>
-                                <div class="bar__bg">
-                                    <div class="bar__value" style="width:90%"></div>
-                                </div>
-                            </li>
-                            <li class="bar">
-                                <div class="bar__metadata">
-                                    <span>JavaScript</span><span>60%</span>
-                                </div>
-                                <div class="bar__bg">
-                                    <div class="bar__value" style="width:60%"></div>
-                                </div>
-                            </li>
-                            <li class="bar">
-                                <div class="bar__metadata">
-                                    <span>TypeScript</span><span>80%</span>
-                                </div>
-                                <div class="bar__bg">
-                                    <div class="bar__value" style="width:80%"></div>
-                                </div>
-                            </li>
-                            <li class="bar">
-                                <div class="bar__metadata">
-                                    <span>React</span><span>79%</span>
-                                </div>
-                                <div class="bar__bg">
-                                    <div class="bar__value" style="width:79%"></div>
-                                </div>
-                            </li>
-                            <li class="bar">
-                                <div class="bar__metadata">
-                                    <span>NodeJs</span><span>68%</span>
-                                </div>
-                                <div class="bar__bg">
-                                    <div class="bar__value" style="width:68%"></div>
-                                </div>
-                            </li>
-                        </ul>
-                    </section>
-                    <section class="skills__tools">
-                        <h3 class="skills__title">Tools</h3>
-                        <ul class="skills_content">
-                            <li>Visual Studio Code</li>
-                            <li>Intelli</li>
-                            <li>Android Studio Code</li>
-                            <li>iOS development tools</li>
-                            <li>Sketch app</li>
-                        </ul>
-                    </section>
-                    <section class="skills__etc">
-                        <h3 class="skills__title">Etc</h3>
-                        <ul class="skills_content">
-                            <li>Git</li>
-                            <li>Scrum Master</li>
-                            <li>Math</li>
-                        </ul>
-                    </section>
+                <div class="top__container---column">
+                    <h2 class="title">포트폴리오</h2>
+                    <p>모두가 만족하는 결과를 만들어 드리겠습니다.</p>
                 </div>
-            </div>
+                <div class="more__btn__wrap">
+                    <button class="more__btns">
+                        <a class="more__btn" href="portfolio.html">
+                            더보기
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+                    </button>
+                </div>
+                
 
-        </section>
-        <!-- Work -->
-        <section id="work" class="section">
-            <div class="max-container">
-                <h2 class="title">My work</h2>
-                <p class="description">Projects</p>
-                <ul class="categories">
-                    <li>
-                        <button class="category category--selected" data-category="all">
-                            All<span class="category__count">8</span>
-                        </button>
-                    </li>
-                    <li>
-                        <button class="category" data-category="front-end">
-                            Front-end<span class="category__count">3</span>
-                        </button>
-                    </li>
-                    <li>
-                        <button class="category" data-category="back-end">
-                            Back-end<span class="category__count">3</span>
-                        </button>
-                    </li>
-                    <li>
-                        <button class="category" data-category="mobile">
-                            Mobile<span class="category__count">1</span>
-                        </button>
-                    </li>
-                </ul>
                 <ul class="projects">
                     <li class="project" data-type="front-end">
                         <a href="#" target="_blank">
@@ -367,62 +222,134 @@
                 </ul>
             </div>
         </section>
+        <!-- About -->
+        <section id="about" class="section">
+            <div class="max-container">
+                <h2 class="about__title">About</h2>
+                <!-- <p class="about__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Voluptates dolorem eius atque, corporis fugiat,
+                    maxime accusamus unde velit quos at sapiente quae.
+                    Harum alias corrupti deleniti quam, ratione reiciendis a.
+                </p> -->
+                <ul class="majors">
+                    <li class="major">
+                        <i class="fa-brands fa-html5 major__icon"></i>
+                        <p class="major__title">Front-end</p>
+                        <p>HTML, CSS, JavaScript, Typescript, React, Vue, Web APIs</p>
+                    </li>
+                    <li class="major">
+                        <i class="fa-solid fa-mobile major__icon"></i>
+                        <p class="major__title">Mobile</p>
+                        <p>Android, iOS, React Native, Flutter, Java, Swift, Kotlin</p>
+                    </li>
+                    <li class="major">
+                        <i class="fa-solid fa-server major__icon"></i>
+                        <p class="major__title">Back-end</p>
+                        <p>Java, JavaScript, Go, NodeJs, Rest APIs, GraphQL</p>
+                    </li>
+                </ul>
+            </div>
+
+        </section>
+        <!-- Skills -->
+        <section id="skills" class="section">
+            <div class="max-container">
+                <h2 class="title">My Skills</h2>
+                <!-- <p class="description">Skills & Attributes</p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    At nihil laboriosam sunt voluptatem nam facilis possimus.
+                    Hic, provident. Quae, recusandae quia aliquam nobis tempore
+                    accusamus ipsam corrupti! Voluptatibus, labore impedit.
+                </p> -->
+                <div class="skills">
+                    <section class="skills__coding">
+                        <h3 class="skills__title">Coding Skill</h3>
+                        <ul class="skills_content">
+                            <li class="bar">
+                                <div class="bar__metadata">
+                                    <span>HTML</span><span>98%</span>
+                                </div>
+                                <div class="bar__bg">
+                                    <div class="bar__value" style="width:98%"></div>
+                                </div>
+                            </li>
+                            <li class="bar">
+                                <div class="bar__metadata">
+                                    <span>CSS</span><span>90%</span>
+                                </div>
+                                <div class="bar__bg">
+                                    <div class="bar__value" style="width:90%"></div>
+                                </div>
+                            </li>
+                            <li class="bar">
+                                <div class="bar__metadata">
+                                    <span>JavaScript</span><span>60%</span>
+                                </div>
+                                <div class="bar__bg">
+                                    <div class="bar__value" style="width:60%"></div>
+                                </div>
+                            </li>
+                            <li class="bar">
+                                <div class="bar__metadata">
+                                    <span>TypeScript</span><span>80%</span>
+                                </div>
+                                <div class="bar__bg">
+                                    <div class="bar__value" style="width:80%"></div>
+                                </div>
+                            </li>
+                            <li class="bar">
+                                <div class="bar__metadata">
+                                    <span>React</span><span>79%</span>
+                                </div>
+                                <div class="bar__bg">
+                                    <div class="bar__value" style="width:79%"></div>
+                                </div>
+                            </li>
+                            <li class="bar">
+                                <div class="bar__metadata">
+                                    <span>NodeJs</span><span>68%</span>
+                                </div>
+                                <div class="bar__bg">
+                                    <div class="bar__value" style="width:68%"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="skills__tools">
+                        <h3 class="skills__title">Tools</h3>
+                        <ul class="skills_content">
+                            <li>Visual Studio Code</li>
+                            <li>Intelli</li>
+                            <li>Android Studio Code</li>
+                            <li>iOS development tools</li>
+                            <li>Sketch app</li>
+                        </ul>
+                    </section>
+                    <section class="skills__etc">
+                        <h3 class="skills__title">Etc</h3>
+                        <ul class="skills_content">
+                            <li>Git</li>
+                            <li>Scrum Master</li>
+                            <li>Math</li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+
+        </section>
 
         <!-- Price -->
-        <section id="testimonial" class="section max-container">
-            
-            <h2 class="title">견적문의</h2>
-                <p>견적요청/상담문의 주시면 빠른 검토 후 피트백드리겠습니다.</p>
-            
-                <form method="" class="price__forms">
-            
-                    <div class="price__form form__01">
-                        <div class="price__input">
-                            <label class="input__title">이름</label>
-                            <input class="input__place" type="text" placeholder="이름을 입력해주세요">
-                        </div>
-                        <div class="price__input">
-                            <label class="input__title">연락처</label>
-                            <input class="input__place" type="tel" placeholder="연락처를 입력해주세요">
-                        </div>
-                        <div class="price__input">
-                            <label class="input__title">이메일</label>
-                            <input class="input__place" type="email" placeholder="이메일을 입력해주세요">
-                        </div>
-                        <div class="price__input">
-                            <label class="input__title">첨부파일</label>
-                            <input class="input__place" type="file">
-                        </div>
-                        <div class="price__input">
-                            <p class="form__comment">
-                                참고사이트를 남겨주시면 보다 정확한 견적이 가능합니다. 용량이 클경우
-                                <a href="mailto:help@gmail.com" class="mailto">help@gmail.com</a> 으로 메일 보내주세요.
-                            </p>
-                        </div>
-                    </div>
-            
-                    <div class="price__form form__02">
-                        <div>
-                            <label class="input__title">문의내용</label>
-                            <textarea class="textarea__place" placeholder="문의하실 내용을 입력해주세요."></textarea>
-                        </div>
-                        
-                        <p class="input__title">개인정보 수집 및 이용 동의</p>
-
-                        <div class="agree__box">
-                            <div>
-                                <input class="input__checkbox" type="checkbox">
-                                <span>개인정보 수집 및 이용에 동의합니다.</span>
-                            </div>
-                            <div>
-                            <a href="#">전문보기</a>
-                            </div>
-                        </div>
-
-                        <button class="price__btn"><a href="#">견적문의하기</a></button>
-            
-                    </div>
-                </form>
+        <section id="price" class="section">
+            <div class="price-container">
+                <a href="price.html">
+                    <h2 class="title">제작/견적문의</h2>
+                    <p class="description">
+                        홈페이지 제작, 프로그램개발, 앱개발, 쇼핑몰제작 <br>문의를 남겨주시면
+                        전문가가 자세한 상담을 진행드립니다.
+                    </p>
+                </a>
+            </div>
         </section>
 
         <!-- Arrow Up -->
