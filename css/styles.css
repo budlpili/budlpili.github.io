@@ -2028,7 +2028,9 @@ input[name="tab_item"] {
         padding: 1rem 2rem;
     }
 
-
+    .production__wrap {
+        padding: 1rem;
+    }
 
 
 
