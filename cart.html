@@ -31,25 +31,23 @@
 </head>
 
 <body>
-
   <!-- Header -->
   <header class="header">
     <div class="header__logo">
       <img class="header__logo__img" src="./images/futterfly-re-bg.png" alt="logo" />
-      <h1 class="header__logo__title"><a href="index.html">NEXPARAN</a></h1>
+      <h1><a href="index.html" class="header__logo__title">NEXPARAN</a></h1>
     </div>
-
-    <nav class="header__nav besides">
+  
+    <nav class="header__nav">
       <ul class="header__menu">
-        <li><a class="header__menu__item active" href="#home">Home</a></li>
-        <li><a class="header__menu__item" href="#portfolio">포트폴리오</a></li>
-        <li><a class="header__menu__item" href="#about">About</a></li>
-        <li><a class="header__menu__item" href="#skills">Skills</a></li>
-        <li><a class="header__menu__item" href="#price">견적문의</a></li>
-        <li><a class="header__menu__item" href="#contact">Contact</a></li>
+        <li><a class="header__menu__item active" href="index.html">홈</a></li>
+        <li><a class="header__menu__item" href="portfolio.html">포트폴리오</a></li>
+        <li><a class="header__menu__item" href="production_line.html">제작안내</a></li>
+        <li><a class="header__menu__item" href="price.html">견적문의</a></li>
+        <li><a class="header__menu__item" href="customer_list.html">고객센터</a></li>
       </ul>
     </nav>
-
+  
     <div class="header__icon__wrap">
       <a class="header__icon" href="sign_in.html"><i class="fa-solid fa-user"></i></a>
       <a class="header__icon" href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
@@ -57,7 +55,7 @@
         <i class="fa-solid fa-bars"></i>
       </button>
     </div>
-
+  
   </header>
 
   <!--- #SIDEBAR -->
@@ -65,49 +63,47 @@
   <div id="sidebar">
 
     <button class="nav__toggles toggle__close" aria-label="close menu">
-      <i class="fa-solid fa-x" name="close-outline" aria-hidden="true"></i>
+        <i class="fa-solid fa-x" name="close-outline" aria-hidden="true"></i>
     </button>
 
     <div class="sidebar__wrapper"></div>
 
     <nav class="navbar">
-      <ul class="navbar__list">
-        <li class="navbar__item">
-          <a href="#home" class="navbar__link" data-nav-link>Home</a>
-        </li>
-        <li class="navbar__item">
-          <a href="#about" class="navbar__link" data-nav-link>About</a>
-        </li>
-        <li class="navbar__item">
-          <a href="#skills" class="navbar__link" data-nav-link>Skills</a>
-        </li>
-        <li class="navbar__item">
-          <a href="#work" class="navbar__link" data-nav-link>Work</a>
-        </li>
-        <li class="navbar__item">
-          <a href="#testimonial" class="navbar__link" data-nav-link>Testimonial</a>
-        </li>
-        <li class="navbar__item">
-          <a href="#contact" class="navbar__link" data-nav-link>Contact</a>
-        </li>
-      </ul>
+        <ul class="navbar__list">
+            <li class="navbar__item">
+                <a href="index.html" class="navbar__link">홈</a>
+            </li>
+            <li class="navbar__item">
+                <a href="portfolio.html" class="navbar__link">포트폴리오</a>
+            </li>
+            <li class="navbar__item">
+                <a href="production_line.html" class="navbar__link">제작안내</a>
+            </li>
+            <li class="navbar__item">
+                <a href="price.html" class="navbar__link">견적문의</a>
+            </li>
+            <li class="navbar__item">
+                <a href="customer.html" class="navbar__link">고객센터</a>
+            </li>
+            
+        </ul>
     </nav>
 
     <div class="sidebar__wrapper"></div>
 
     <button class="cart__btn__wrap">
-      <a class="cart__btn" href="#">장바구니</a>
+        <a class="cart__btn" href="cart.html">장바구니</a>
     </button>
 
     <div class="sidebar__wrapper"></div>
 
     <ul class="sign__list">
-      <li>
-        <p class="sign__btn__small">Sign in</p>
-      </li>
-      <li>
-        <p class="sign__btn__small">Sign up</p>
-      </li>
+        <li>
+            <a class="sign__btn__small" href="sign_in.html">로그인</a>
+        </li>
+        <li>
+            <a class="sign__btn__small" href="sign_up.html">가입하기</a>
+        </li>
     </ul>
   </div>
 
@@ -136,120 +132,154 @@
 
     <!-- start cart-section -->
     <section id="cart">
-      <form class="cart__list" action="" method="post">
-        <table class="cart__table">
-          <thead>
-            <tr>
-              <th class="product__remove">&nbsp;</th>
-              <th class="product__thumbnail">&nbsp;</th>
-              <th class="product__name">제품명</th>
-              <th class="product__price">가격</th>
-              <th class="product__quantity">개수</th>
-              <th class="product__subtotal">합계금액</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr class="cart__single">
-              <td class="product__remove">
-                <a href="#!" class="remove__btn" title="Remove this item">&times;</a>
-              </td>
-              <td class="product__thumbnail">
-                <a href="#!">
-                  <img class="thumbnail__img" src="images/product/img_3.png" alt="#!" />
-                </a>
-              </td>
-              <td class="product__name" data-title="Product">
-                <a href="#!"><p class="product__title">TV 25인치</p></a>
-              </td>
-
-              <td class="product__price" data-title="Price">
-                <span>&#x20A9;</span> <span>165,000</span>
-              </td>
-              <td class="product__quantity" data-title="Quantity">
-                <div class="quantity">
-                  <span class="minus">-</span>
-                  <span class="counter"></span>
-                  <span class="plus">+</span>
-                </div>
-              </td>
-              <td class="product__subtotal" data-title="Total">
-                <span>&#x20A9;</span> 
-                <span>330,000</span>
-              </td>
-            </tr>
-            <tr class="cart__single">
-              <td class="product__remove">
-                <a href="#!" class="remove__btn" title="Remove this item">&times;</a>
-              </td>
-              <td class="product__thumbnail">
-                <a href="#!">
-                  <img class="thumbnail__img" src="images/product/img_2.png" alt="#!" />
-                </a>
-              </td>
-              <td class="product__name" data-title="Product">
-                <a href="#!"><p class="product__title">해드셋</p></a>
-              </td>
-
-              <td class="product__price" data-title="Price">
-                <span>&#x20A9;</span> <span>122,000</span>
-              </td>
-              <td class="product__quantity" data-title="Quantity">
-                <div class="quantity">
-                  <span class="minus">-</span>
-                  <span class="counter"></span>
-                  <span class="plus">+</span>
-                </div>
-              </td>
-              <td class="product__subtotal" data-title="Total">
-                <span>&#x20A9;</span> 
-                <span>330,000</span>
-              </td>
-            </tr>
-            
-            
-            <!-- 쿠폰, btn  -->
-            <tr>
-              <td colspan="6" class="cart__actions">
-                <div class="coupon">
-                  <label for="coupon__code">Coupon:</label>
-                  <input type="text" name="coupon__code" class="input__text" id="coupon__code" value=""
-                    placeholder="쿠폰 번호" />
-                  <button class="coupon__btn" type="submit">
-                    <a class="btn__text">적용하기</a>
-                  </button>
-                </div>
-
-                <button class="coupon__btn" type="submit">
-                  <a class="btn__text">UPDATE CART</a>
-                </button>
-
-              </td>
-            </tr>
-
-          </tbody>
-        </table>
+      <form class="cart__wrap" action="" method="post">
+        <ul class="cart__header">
+          <li class="product__name">제품명</li>
+          <li class="product__p">가격</li>
+          <li class="product__qt">개수</li>
+          <li class="product__st">합계금액</li>
+          <li class="product__del">삭제</li>
+        </ul>
+        <ul class="cart__single">
+          <li class="product__thumbnail">
+            <a href="#!">
+              <img class="thumbnail__img" src="images/product/img_1.png" alt="#!" />
+            </a>
+            <a href="#!">
+              <p class="thumbnail__name">TV 25인치</p>
+            </a>
+          </li>
+          <li class="product__price" data-title="Price">
+            <span>&#x20A9;</span> <span>165,000</span>
+          </li>
+          <li class="product__quantity" data-title="Quantity">
+            <div class="quantity">
+              <span class="minus">-</span>
+              <span class="counter"></span>
+              <span class="plus">+</span>
+            </div>
+          </li>
+          <li class="product__total" data-title="Total">
+            <span>&#x20A9;</span> 
+            <span>330,000</span>
+          </li>
+          <li class="remove__btns">
+            <a href="#!" class="remove__btn" title="Remove this item">
+              <i class="fa-solid fa-trash-can"></i>
+            </a>
+          </li>
+        </ul>
+        <ul class="cart__single">
+          <li class="product__thumbnail">
+            <a href="#!">
+              <img class="thumbnail__img" src="images/product/img_2.png" alt="#!" />
+            </a>
+            <a href="#!">
+              <p class="thumbnail__name">TV 25인치</p>
+            </a>
+          </li>
+          <li class="product__price" data-title="Price">
+            <span>&#x20A9;</span> <span>165,000</span>
+          </li>
+          <li class="product__quantity" data-title="Quantity">
+            <div class="quantity">
+              <span class="minus">-</span>
+              <span class="counter"></span>
+              <span class="plus">+</span>
+            </div>
+          </li>
+          <li class="product__total" data-title="Total">
+            <span>&#x20A9;</span> 
+            <span>330,000</span>
+          </li>
+          <li class="remove__btns">
+            <a href="#!" class="remove__btn" title="Remove this item">
+              <i class="fa-solid fa-trash-can"></i>
+            </a>
+          </li>
+        </ul>
+        <ul class="cart__single">
+          <li class="product__thumbnail">
+            <a href="#!">
+              <img class="thumbnail__img" src="images/product/img_3.png" alt="#!" />
+            </a>
+            <a href="#!">
+              <p class="thumbnail__name">TV 25인치</p>
+            </a>
+          </li>
+          <li class="product__price" data-title="Price">
+            <span>&#x20A9;</span> <span>165,000</span>
+          </li>
+          <li class="product__quantity" data-title="Quantity">
+            <div class="quantity">
+              <span class="minus">-</span>
+              <span class="counter"></span>
+              <span class="plus">+</span>
+            </div>
+          </li>
+          <li class="product__total" data-title="Total">
+            <span>&#x20A9;</span> 
+            <span>330,000</span>
+          </li>
+          <li class="remove__btns">
+            <a href="#!" class="remove__btn" title="Remove this item">
+              <i class="fa-solid fa-trash-can"></i>
+            </a>
+          </li>
+        </ul>
+        
+        <!-- 쿠폰, btn  -->
+        <div class="coupon__wrap">
+          <div class="coupon">
+            <label for="coupon__code">Coupon:</label>
+            <input type="text" name="coupon__code" class="input__text" id="coupon__code" value=""
+              placeholder="쿠폰 번호" />
+            <button class="coupon__btn" type="submit">
+              <a class="btn__text">적용하기</a>
+            </button>
+          </div>
+    
+          <button class="coupon__btn" type="submit">
+            <a class="btn__text">UPDATE CART</a>
+          </button>
+        </div>
       </form>
+
 
       <!-- cart_total -->
-      <h3 class="cart__title">Cart Totals</h3>
-      <form class="cart__totals">
-        <div>총 합계금액 :</div>
-        <div data-title="Total">
-            <strong>
+      <div class="cart__totals__wrap">
+        <h3 class="cart__title">Cart Totals</h3>
+        <form class="cart__totals">
+          <div class="sum__total" data-title="Sum-Total">
+            <div>합계 금액 :</div>
+            <p class="money__container">
               <span class="prince__symbol">&#x20A9;</span>
-              <span>430,000</span>
+              <span>660,000</span>
+            </p>
+          </div>
+          <div class="sale__total" data-title="Sale-Total">
+            <div>할인금액 :</div>
+            <p  class="money__container">
+              <span class="prince__symbol">&#x20A9;</span>
+              <span>60,000</span>
+            </p>
+          </div>
+          <div class="cart__total" data-title="Last-Total">
+            <div>총 합계금액 :</div>
+            <strong class="money__container">
+              <span class="prince__symbol">&#x20A9;</span>
+              <span>600,000</span>
             </strong>
           </div>
-      </form>
-      <div class="check__out">
-        <button class="check__out__btn" type="submit">
-          <a class="btn__text">결제하기</a>
-        </button>
+        </form>
+        <div class="check__out">
+          <button class="check__out__btn" type="submit">
+            <a class="btn__text">결제하기</a>
+          </button>
+        </div>
       </div>
-      
     </section>
     <!-- end cart-section -->
-
 
     <!-- Arrow Up -->
     <aside id="arrow">
@@ -368,7 +398,7 @@
 
     <div class="footer__bottom">
       <p class="copyright">
-        &copy; 2024 All Rights Reserved by <a href="#" class="copyright-link">Nexparan</a>.
+        &copy; 2024 All Rights Reserved by <a href="#" class="copyright__link">Nexparan</a>.
       </p>
     </div>
   </footer>

@@ -51,14 +51,5 @@ document.addEventListener('scroll', () => {
   window.onscroll = calcScrollValue;
   window.onload = calcScrollValue;
 
+// table sort
 
-  // Sign Up, Sign In change
-
-//   const signUpBtn = document.querySelector('.sign__up__go');
-//   const signIn = document.querySelector('.sign__in__container');
-//   const signUp = document.querySelector('.sign__up__container');
-
-//   signUpBtn.addEventListener("click", () => {
-//     signUp.style.display = 'block';
-//     signIn.style.display = 'none';
-// });

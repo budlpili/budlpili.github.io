@@ -33,3 +33,12 @@ const closeNavbar = function () {
 
 addEventOnElem(navbarLinks, 'click', closeNavbar);
 
+const overlayAllClose = function () {
+  navbar.classList.remove('active');
+  overlay.classList.remove('active');
+  document.body.classList.remove('active');
+}
+
+addEventOnElem(overlay, 'click', overlayAllClose);
+
+

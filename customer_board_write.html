@@ -38,7 +38,7 @@
   <header class="header">
     <div class="header__logo">
       <img class="header__logo__img" src="./images/futterfly-re-bg.png" alt="logo" />
-      <h1 class="header__logo__title"><a href="index.html">NEXPARAN</a></h1>
+      <h1><a href="index.html" class="header__logo__title">NEXPARAN</a></h1>
     </div>
   
     <nav class="header__nav">
@@ -47,12 +47,12 @@
         <li><a class="header__menu__item" href="portfolio.html">포트폴리오</a></li>
         <li><a class="header__menu__item" href="production_line.html">제작안내</a></li>
         <li><a class="header__menu__item" href="price.html">견적문의</a></li>
-        <li><a class="header__menu__item" href="customer.html">고객센터</a></li>
+        <li><a class="header__menu__item" href="customer_list.html">고객센터</a></li>
       </ul>
     </nav>
   
     <div class="header__icon__wrap">
-      <a class="header__icon" href="login.html"><i class="fa-solid fa-user"></i></a>
+      <a class="header__icon" href="sign_in.html"><i class="fa-solid fa-user"></i></a>
       <a class="header__icon" href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
       <button class="nav__toggles toggle__open" aria-label="open menu">
         <i class="fa-solid fa-bars"></i>
@@ -60,56 +60,56 @@
     </div>
   
   </header>
-  
+
   <!--- #SIDEBAR -->
-  
+
   <div id="sidebar">
-  
+
     <button class="nav__toggles toggle__close" aria-label="close menu">
-      <i class="fa-solid fa-x" name="close-outline" aria-hidden="true"></i>
+        <i class="fa-solid fa-x" name="close-outline" aria-hidden="true"></i>
     </button>
-  
+
     <div class="sidebar__wrapper"></div>
-  
+
     <nav class="navbar">
-      <ul class="navbar__list">
-        <li class="navbar__item">
-          <a href="index.html" class="navbar__link">홈</a>
-        </li>
-        <li class="navbar__item">
-          <a href="portfolio.html" class="navbar__link">포트폴리오</a>
-        </li>
-        <li class="navbar__item">
-          <a href="production_line.html" class="navbar__link">제작안내</a>
-        </li>
-        <li class="navbar__item">
-          <a href="price.html" class="navbar__link">견적문의</a>
-        </li>
-        <li class="navbar__item">
-          <a href="customer.html" class="navbar__link">고객센터</a>
-        </li>
-  
-      </ul>
+        <ul class="navbar__list">
+            <li class="navbar__item">
+                <a href="index.html" class="navbar__link">홈</a>
+            </li>
+            <li class="navbar__item">
+                <a href="portfolio.html" class="navbar__link">포트폴리오</a>
+            </li>
+            <li class="navbar__item">
+                <a href="production_line.html" class="navbar__link">제작안내</a>
+            </li>
+            <li class="navbar__item">
+                <a href="price.html" class="navbar__link">견적문의</a>
+            </li>
+            <li class="navbar__item">
+                <a href="customer.html" class="navbar__link">고객센터</a>
+            </li>
+            
+        </ul>
     </nav>
-  
+
     <div class="sidebar__wrapper"></div>
-  
+
     <button class="cart__btn__wrap">
-      <a class="cart__btn" href="cart.html">장바구니</a>
+        <a class="cart__btn" href="cart.html">장바구니</a>
     </button>
-  
+
     <div class="sidebar__wrapper"></div>
-  
+
     <ul class="sign__list">
-      <li>
-        <a class="sign__btn__small" href="sign_in.html">로그인</a>
-      </li>
-      <li>
-        <a class="sign__btn__small" href="sign_up.html">가입하기</a>
-      </li>
+        <li>
+            <a class="sign__btn__small" href="sign_in.html">로그인</a>
+        </li>
+        <li>
+            <a class="sign__btn__small" href="sign_up.html">가입하기</a>
+        </li>
     </ul>
   </div>
-  
+
   <div class="overlay" data-overlay data-nav-toggler></div>
 
   <!-- Main -->
@@ -134,11 +134,64 @@
     </div>
     <!-- breadcrumb end -->
 
-    <!-- portfolio -->
+    <!-- board write -->
     <section id="customer">
       <div class="max-container">
         <h2 class="title"></h2>
-        
+        <form name="board__customer" id="board__table__form">
+
+          <table class="board__table board__write">
+              <thead>
+                  <tr>
+                      <th colspan="2"><span class="board__title">글쓰기</span></th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td class="board__title__sub">제  목</td>
+                      <td><input type="text" class="input__place"></td>
+                  </tr>
+                  <tr>
+                      <td colspan="2">
+                          <span class="text__count">(현재 0글자)</span>
+                          <textarea name="textarea" id="textarea" class="input__place" cols="50" rows="5" minlength="10"
+                          placeholder="내용을 입력해주세요"></textarea>
+                      </td>
+                  </tr>
+
+                  <tr>
+                      <td class="board__title__sub">첨부파일</td>
+                      <td>
+                          <div class="filebox">    
+                              <input class="input__place" value="첨부파일" placeholder="첨부파일">
+                              <label for="file">파일찾기</label> 
+                              <input type="file" id="file">
+                          </div>
+                      </td>
+                  </tr>    
+                  <tr>
+                      <td colspan="2">
+                        <div class="board__btn__wrap">
+                          <button class="btn__cancle"><span>취소</span></button>
+                          <button class="btn__success" type="button" onclick="location.href='customer_list.html'">
+                            <span>작성완료</span>
+                          </button>
+                        </div>
+                      </td>
+                  </tr>    
+              </tbody>
+          </table>
+
+        </form>
+      </div>
+
+
+
+
+
+
+
+
       </div>
     </section>
 
@@ -259,7 +312,7 @@
 
     <div class="footer__bottom">
       <p class="copyright">
-        &copy; 2024 All Rights Reserved by <a href="#" class="copyright-link">Nexparan</a>.
+        &copy; 2024 All Rights Reserved by <a href="#" class="copyright__link">Nexparan</a>.
       </p>
     </div>
   </footer>

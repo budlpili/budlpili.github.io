@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- SEO -->
+  <title>Mare&#39;s Site</title>
+  <meta name="description" content="마레의 사이트" />
+  <link rel="shortcut icon" href="./images/futterfly.ico" type="image/x-icon">
+  <!-- OG (Open Graph Data) -->
+  <meta property="og:title" content="마레의 사이트" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://budlpili.github.io/nexparan_home/" />
+  <meta property="og:image" content="https://budlpili.github.io/nexparan_home/images/og.webp" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet">
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/f2660783e0.js" crossorigin="anonymous"></script>
+  <!-- Typeit -->
+  <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+  <!-- SCRIPT -->
+  <script type="module" src="./src/main.js" defer></script>
+  <script type="module" src="./src/projects.js" defer></script>
+  <script type="module" src="./src/activ_menu.js" defer></script>
+  <script type="module" src="./src/type.js" defer></script>
+  <script type="module" src="./src/navbar.js" defer></script>
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/styles.css">
+
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="header__logo">
+      <img class="header__logo__img" src="./images/futterfly-re-bg.png" alt="logo" />
+      <h1><a href="index.html" class="header__logo__title">NEXPARAN</a></h1>
+    </div>
+  
+    <nav class="header__nav">
+      <ul class="header__menu">
+        <li><a class="header__menu__item active" href="index.html">홈</a></li>
+        <li><a class="header__menu__item" href="portfolio.html">포트폴리오</a></li>
+        <li><a class="header__menu__item" href="production_line.html">제작안내</a></li>
+        <li><a class="header__menu__item" href="price.html">견적문의</a></li>
+        <li><a class="header__menu__item" href="customer_list.html">고객센터</a></li>
+      </ul>
+    </nav>
+  
+    <div class="header__icon__wrap">
+      <a class="header__icon" href="sign_in.html"><i class="fa-solid fa-user"></i></a>
+      <a class="header__icon" href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+      <button class="nav__toggles toggle__open" aria-label="open menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  
+  </header>
+
+  <!--- #SIDEBAR -->
+
+  <div id="sidebar">
+
+    <button class="nav__toggles toggle__close" aria-label="close menu">
+      <i class="fa-solid fa-x" name="close-outline" aria-hidden="true"></i>
+    </button>
+
+    <div class="sidebar__wrapper"></div>
+
+    <nav class="navbar">
+      <ul class="navbar__list">
+        <li class="navbar__item">
+          <a href="index.html" class="navbar__link">홈</a>
+        </li>
+        <li class="navbar__item">
+          <a href="portfolio.html" class="navbar__link">포트폴리오</a>
+        </li>
+        <li class="navbar__item">
+          <a href="production_line.html" class="navbar__link">제작안내</a>
+        </li>
+        <li class="navbar__item">
+          <a href="price.html" class="navbar__link">견적문의</a>
+        </li>
+        <li class="navbar__item">
+          <a href="customer.html" class="navbar__link">고객센터</a>
+        </li>
+
+      </ul>
+    </nav>
+
+    <div class="sidebar__wrapper"></div>
+
+    <button class="cart__btn__wrap">
+      <a class="cart__btn" href="cart.html">장바구니</a>
+    </button>
+
+    <div class="sidebar__wrapper"></div>
+
+    <ul class="sign__list">
+      <li>
+        <a class="sign__btn__small" href="sign_in.html">로그인</a>
+      </li>
+      <li>
+        <a class="sign__btn__small" href="sign_up.html">가입하기</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="overlay" data-overlay data-nav-toggler></div>
+
+  <!-- Main -->
+  <main>
+    <!-- Home -->
+    <section id="home">
+      <div class="home__container max-container">
+
+      </div>
+    </section>
+
+    <!-- breadcrumb start -->
+    <div class="breadcrumb__container">
+      <ul class="breadcrumbs">
+        <li class="breadcrumb">
+          <a href="index.html"><span>Home</span></a>
+        </li>
+        <li class="breadcrumb">
+          <span>고객센터</span>
+        </li>
+      </ul>
+    </div>
+    <!-- breadcrumb end -->
+
+    <!-- board write -->
+    <section id="customer">
+      <div class="max-container">
+        <h2 class="title"></h2>
+        <form name="board__customer" id="board__table__form">
+    
+          <div class="boardlist__top__wrap">
+            <div class="boardlist__total">
+              전체 <b> 115,222</b> / 1 페이지
+            </div>
+            <div class="table__top__right">
+    
+              <div class="btn__search">
+                <a href="#!">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
+              </div>
+              <div class="btn__sorts">
+                <a href="#!" class="btn__sort">
+                  <i class="fa-solid fa-arrow-up-a-z"></i>
+                </a>
+                <ul class="sort__list">
+                  <li>최신순</li>
+                  <li>날짜순</li>
+                  <li>추천순</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+    
+          <div class="boardlist__main">
+            <table class="board__table__list">
+              <thead>
+                <tr>
+                  <th class="num__head">번호</th>
+                  <th class="title__head">제목</th>
+                  <th class="name__head">이름</th>
+                  <th class="date__head">날짜</th>
+                  <th class="counts__head">조회</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="list__firstline">
+                  <td class="num__list">
+                    <div class="alim">알림</div>
+                  </td>
+                  <td class="title__list">
+                    <a href="#!" class="title__list__text">
+                      문의하실 내용을 남겨주세요..
+                    </a>
+                    <a href="#!">
+                      <span class="title__list__count">25</span>
+                    </a>
+                  </td>
+                  <td class="name__list">
+                    <span>넥스파란 관리자</span>
+                  </td>
+                  <td class="date__list">
+                    <span>24.02.15</span>
+                  </td>
+                  <td class="counts__list">
+                    <span>98598</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="num__list">
+                    <div>123456</div>
+                  </td>
+                  <td class="title__list">
+                    <a href="#!" class="title__list__text">
+                      문의사항이 있습니다.
+                    </a>
+                    <a href="#!">
+                      <span class="title__list__count">25</span>
+                    </a>
+                  </td>
+                  <td class="name__list">
+                    <span>넥스파란 관리자</span>
+                  </td>
+                  <td class="date__list">
+                    <span>24.02.15</span>
+                  </td>
+                  <td class="counts__list">
+                    <span>98598</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="num__list">
+                    <div>123456</div>
+                  </td>
+                  <td class="title__list">
+                    <a href="#!" class="title__list__text">
+                      문의사항이 있습니다.
+                    </a>
+                    <a href="#!">
+                      <span class="title__list__count">25</span>
+                    </a>
+                  </td>
+                  <td class="name__list">
+                    <span>넥스파란 관리자</span>
+                  </td>
+                  <td class="date__list">
+                    <span>24.02.15</span>
+                  </td>
+                  <td class="counts__list">
+                    <span>98598</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="num__list">
+                    <div>123456</div>
+                  </td>
+                  <td class="title__list">
+                    <a href="#!" class="title__list__text">
+                      문의사항이 있습니다.
+                    </a>
+                    <a href="#!">
+                      <span class="title__list__count">25</span>
+                    </a>
+                  </td>
+                  <td class="name__list">
+                    <span>넥스파란 관리자</span>
+                  </td>
+                  <td class="date__list">
+                    <span>24.02.15</span>
+                  </td>
+                  <td class="counts__list">
+                    <span>98598</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="num__list">
+                    <div>123456</div>
+                  </td>
+                  <td class="title__list">
+                    <a href="#!" class="title__list__text">
+                      문의사항이 있습니다.
+                    </a>
+                    <a href="#!">
+                      <span class="title__list__count">25</span>
+                    </a>
+                  </td>
+                  <td class="name__list">
+                    <span>넥스파란 관리자</span>
+                  </td>
+                  <td class="date__list">
+                    <span>24.02.15</span>
+                  </td>
+                  <td class="counts__list">
+                    <span>98598</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="num__list">
+                    <div>123456</div>
+                  </td>
+                  <td class="title__list">
+                    <a href="#!" class="title__list__text">
+                      문의사항이 있습니다.
+                    </a>
+                    <a href="#!">
+                      <span class="title__list__count">25</span>
+                    </a>
+                  </td>
+                  <td class="name__list">
+                    <span>넥스파란 관리자</span>
+                  </td>
+                  <td class="date__list">
+                    <span>24.02.15</span>
+                  </td>
+                  <td class="counts__list">
+                    <span>98598</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="num__list">
+                    <div>123456</div>
+                  </td>
+                  <td class="title__list">
+                    <a href="#!" class="title__list__text">
+                      문의사항이 있습니다.
+                    </a>
+                    <a href="#!">
+                      <span class="title__list__count">25</span>
+                    </a>
+                  </td>
+                  <td class="name__list">
+                    <span>넥스파란 관리자</span>
+                  </td>
+                  <td class="date__list">
+                    <span>24.02.15</span>
+                  </td>
+                  <td class="counts__list">
+                    <span>98598</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="num__list">
+                    <div>123456</div>
+                  </td>
+                  <td class="title__list">
+                    <a href="#!" class="title__list__text">
+                      문의사항이 있습니다.
+                    </a>
+                    <a href="#!">
+                      <span class="title__list__count">25</span>
+                    </a>
+                  </td>
+                  <td class="name__list">
+                    <span>넥스파란 관리자</span>
+                  </td>
+                  <td class="date__list">
+                    <span>24.02.15</span>
+                  </td>
+                  <td class="counts__list">
+                    <span>98598</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="num__list">
+                    <div>123456</div>
+                  </td>
+                  <td class="title__list">
+                    <a href="#!" class="title__list__text">
+                      문의사항이 있습니다.
+                    </a>
+                    <a href="#!">
+                      <span class="title__list__count">25</span>
+                    </a>
+                  </td>
+                  <td class="name__list">
+                    <span>넥스파란 관리자</span>
+                  </td>
+                  <td class="date__list">
+                    <span>24.02.15</span>
+                  </td>
+                  <td class="counts__list">
+                    <span>98598</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="num__list">
+                    <div>123456</div>
+                  </td>
+                  <td class="title__list">
+                    <a href="#!" class="title__list__text">
+                      문의사항이 있습니다.
+                    </a>
+                    <a href="#!">
+                      <span class="title__list__count">25</span>
+                    </a>
+                  </td>
+                  <td class="name__list">
+                    <span>넥스파란 관리자</span>
+                  </td>
+                  <td class="date__list">
+                    <span>24.02.15</span>
+                  </td>
+                  <td class="counts__list">
+                    <span>98598</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="num__list">
+                    <div>123456</div>
+                  </td>
+                  <td class="title__list">
+                    <a href="#!" class="title__list__text">
+                      문의사항이 있습니다.
+                    </a>
+                    <a href="#!">
+                      <span class="title__list__count">25</span>
+                    </a>
+                  </td>
+                  <td class="name__list">
+                    <span>넥스파란 관리자</span>
+                  </td>
+                  <td class="date__list">
+                    <span>24.02.15</span>
+                  </td>
+                  <td class="counts__list">
+                    <span>98598</span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="table__bottom">
+            <div>
+              <button class="btn__write" type="button" onclick="location.href='customer_board_write.html'">글쓰기</button>
+            </div>
+            <!-- pagination -->
+            <div class="bl-page">
+              <ul class="pagination">
+                <li><a href="#!"><i class="fa-solid fa-angles-left"></i></a></li>
+                <li><a href="#!"><i class="fa-solid fa-chevron-left"></i></a></li>
+                <li><a href="#!">1</a></li>
+                <li class="active"><a href="#!">2</a></li>
+                <li><a href="#!">3</a></li>
+                <li><a href="#!">4</a></li>
+                <li><a href="#!">5</a></li>
+                <li><a href="#!">6</a></li>
+                <li><a href="#!">7</a></li>
+                <li><a href="#!">8</a></li>
+                <li><a href="#!">9</a></li>
+                <li><a href="#!">10</a></li>
+                <li><a href="#!"><i class="fa-solid fa-angle-right"></i></a></li>
+                <li><a href="#!"><i class="fa-solid fa-angles-right"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </form>
+      </div>
+
+    </section>
+
+    <!-- Arrow Up -->
+    <aside id="arrow">
+      <a id="arrow-up" href="#home" title="back to top">
+        <span id="arrow-up-value">&#8593;</span>
+      </a>
+    </aside>
+
+  </main>
+
+  <!-- Footer -->
+  <footer id="contact" class="section">
+    <div class="footer__top max-container">
+
+      <div class="footer__brand">
+        <div class="footer__title">
+          <img class="footer__logo__img" src="./images/futterfly-re-bg.png">
+          <a href="#" class="footer__logo__title">NEXPARAN</a>
+        </div>
+
+        <ul class="footer__brand__lists">
+          <li class="footer__brand__list">
+            <i class="fa-solid fa-location-dot"></i>
+            <address class="contact__link address">Korea, Lorem.</address>
+          </li>
+          <li class="footer__brand__list">
+            <i class="fa-solid fa-phone"></i>
+            <a href="tel:+1234567890" class="contact__link" target="_blank" title="tel">
+              +1234567890
+            </a>
+          </li>
+
+        </ul>
+        <ul class="footer__brand__lists">
+          <li class="footer__brand__list">
+            <ul class="brand__links">
+              <li>
+                <a href="#" class="contact__link--icon" target="_blank" title="my facebook link">
+                  <i class="fa-brands fa-facebook"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="contact__link--icon" target="_blank" title="my instagram link">
+                  <i class="fa-brands fa-square-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="contact__link--icon" target="_blank" title="my X-twitter link">
+                  <i class="fa-brands fa-x-twitter"></i>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+
+      </div>
+
+      <ul class="contact__links">
+
+        <li>
+          <p class="contact__title">Help & Information</p>
+        </li>
+
+        <li>
+          <a href="#" class="contact__link">Help & Contact Us</a>
+        </li>
+
+        <li>
+          <a href="#" class="contact__link">Returns & Refunds</a>
+        </li>
+
+        <li>
+          <a href="#" class="contact__link">Online Stores</a>
+        </li>
+
+        <li>
+          <a href="#" class="contact__link">Terms & Conditions</a>
+        </li>
+      </ul>
+
+      <ul class="contact__links">
+
+        <li>
+          <p class="contact__title">About Us</p>
+        </li>
+
+        <li>
+          <a href="#" class="contact__link">About Us</a>
+        </li>
+
+        <li>
+          <a href="#" class="contact__link">What We Do</a>
+        </li>
+
+        <li>
+          <a href="#" class="contact__link">FAQ Page</a>
+        </li>
+
+        <li>
+          <a href="#" class="contact__link">Contact Us</a>
+        </li>
+
+      </ul>
+
+      <div class="contact__links">
+        <p class="contact__title">Newsletter</p>
+        <form action="" class="footer__form">
+          <input class="footer__email__field" type="email" name="email_address" placeholder="Your email address"
+            required>
+          <button class="footer__form__btn" type="submit">
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p class="copyright">
+        &copy; 2024 All Rights Reserved by <a href="#" class="copyright__link">Nexparan</a>.
+      </p>
+    </div>
+  </footer>
+
+</body>
+
+</html>
