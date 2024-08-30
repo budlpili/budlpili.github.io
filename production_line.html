@@ -117,37 +117,40 @@
   <main>
     <!-- Home -->
     <section id="home">
-      <div class="home__container max-container">
-
+      <div class="max-container">
+        <div class="page__title__wrap">
+          <p class="page__title">제작안내</p>
+        </div>
+        
       </div>
+      <!-- breadcrumb start -->
+      <div class="breadcrumb__container">
+        <ul class="breadcrumbs">
+          <li class="breadcrumb">
+            <a href="index.html"><span>Home</span></a>
+          </li>
+          <li class="breadcrumb">
+            <span>제작안내</span>
+          </li>
+        </ul>
+      </div>
+        <!-- breadcrumb end -->
     </section>
 
-    <!-- breadcrumb start -->
-    <div class="breadcrumb__container">
-      <ul class="breadcrumbs">
-        <li class="breadcrumb">
-          <a href="index.html"><span>Home</span></a>
-        </li>
-        <li class="breadcrumb">
-          <span>제작안내</span>
-        </li>
-      </ul>
-    </div>
-    <!-- breadcrumb end -->
 
     <!-- Production wrap start -->
     <section class="production__wrap">
       <!-- Tap style -->
       <div class="tabs">
         <input id="tab__ing" type="radio" name="tab_item" checked>
-        <label class="tab_item" for="tab__ing">제작진행순서</label>
+        <label class="tab__item" for="tab__ing">제작진행순서</label>
 
         <input id="tab__material" type="radio" name="tab_item">
-        <label class="tab_item" for="tab__material">준비사항</label>
+        <label class="tab__item" for="tab__material">준비사항</label>
 
           <div class="label__slider"></div>
 
-        <div class="tab_content" id="tab__ing__content">
+        <div class="tab__content" id="tab__ing__content">
           <!-- Production time line -->
           <section id="production__line">
             <div class="wrapper">
@@ -378,7 +381,7 @@
           </section>
         </div>
         <!-- 준비사항 -->
-        <div class="tab_content" id="tab__material__content">
+        <div class="tab__content" id="tab__material__content">
           제작준비사항
         </div>
       </div>

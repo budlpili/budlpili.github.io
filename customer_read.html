@@ -24,20 +24,23 @@
   <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
   <!-- SCRIPT -->
   <script type="module" src="./src/main.js" defer></script>
+  <script type="module" src="./src/projects.js" defer></script>
+  <script type="module" src="./src/activ_menu.js" defer></script>
+  <script type="module" src="./src/type.js" defer></script>
   <script type="module" src="./src/navbar.js" defer></script>
   <!-- CSS -->
   <link rel="stylesheet" href="./css/styles.css">
+
 </head>
 
 <body>
-
   <!-- Header -->
   <header class="header">
     <div class="header__logo">
       <img class="header__logo__img" src="./images/futterfly-re-bg.png" alt="logo" />
       <h1><a href="index.html" class="header__logo__title">NEXPARAN</a></h1>
     </div>
-  
+
     <nav class="header__nav">
       <ul class="header__menu">
         <li><a class="header__menu__item active" href="index.html">홈</a></li>
@@ -47,7 +50,7 @@
         <li><a class="header__menu__item" href="customer_list.html">고객센터</a></li>
       </ul>
     </nav>
-  
+
     <div class="header__icon__wrap">
       <a class="header__icon" href="sign_in.html"><i class="fa-solid fa-user"></i></a>
       <a class="header__icon" href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
@@ -55,7 +58,7 @@
         <i class="fa-solid fa-bars"></i>
       </button>
     </div>
-  
+
   </header>
 
   <!--- #SIDEBAR -->
@@ -63,52 +66,53 @@
   <div id="sidebar">
 
     <button class="nav__toggles toggle__close" aria-label="close menu">
-        <i class="fa-solid fa-x" name="close-outline" aria-hidden="true"></i>
+      <i class="fa-solid fa-x" name="close-outline" aria-hidden="true"></i>
     </button>
 
     <div class="sidebar__wrapper"></div>
 
     <nav class="navbar">
-        <ul class="navbar__list">
-            <li class="navbar__item">
-                <a href="index.html" class="navbar__link">홈</a>
-            </li>
-            <li class="navbar__item">
-                <a href="portfolio.html" class="navbar__link">포트폴리오</a>
-            </li>
-            <li class="navbar__item">
-                <a href="production_line.html" class="navbar__link">제작안내</a>
-            </li>
-            <li class="navbar__item">
-                <a href="price.html" class="navbar__link">견적문의</a>
-            </li>
-            <li class="navbar__item">
-                <a href="customer.html" class="navbar__link">고객센터</a>
-            </li>
-            
-        </ul>
+      <ul class="navbar__list">
+        <li class="navbar__item">
+          <a href="index.html" class="navbar__link">홈</a>
+        </li>
+        <li class="navbar__item">
+          <a href="portfolio.html" class="navbar__link">포트폴리오</a>
+        </li>
+        <li class="navbar__item">
+          <a href="production_line.html" class="navbar__link">제작안내</a>
+        </li>
+        <li class="navbar__item">
+          <a href="price.html" class="navbar__link">견적문의</a>
+        </li>
+        <li class="navbar__item">
+          <a href="customer.html" class="navbar__link">고객센터</a>
+        </li>
+
+      </ul>
     </nav>
 
     <div class="sidebar__wrapper"></div>
 
     <button class="cart__btn__wrap">
-        <a class="cart__btn" href="cart.html">장바구니</a>
+      <a class="cart__btn" href="cart.html">장바구니</a>
     </button>
 
     <div class="sidebar__wrapper"></div>
 
     <ul class="sign__list">
-        <li>
-            <a class="sign__btn__small" href="sign_in.html">로그인</a>
-        </li>
-        <li>
-            <a class="sign__btn__small" href="sign_up.html">가입하기</a>
-        </li>
+      <li>
+        <a class="sign__btn__small" href="sign_in.html">로그인</a>
+      </li>
+      <li>
+        <a class="sign__btn__small" href="sign_up.html">가입하기</a>
+      </li>
     </ul>
   </div>
 
   <div class="overlay" data-overlay data-nav-toggler></div>
 
+  <!-- Main -->
   <main>
     <!-- Home -->
     <section id="home">
@@ -124,94 +128,153 @@
           <a href="index.html"><span>Home</span></a>
         </li>
         <li class="breadcrumb">
-          <span>견적문의</span>
+          <span>고객센터</span>
         </li>
       </ul>
     </div>
     <!-- breadcrumb end -->
 
-    <!-- Price start -->
-    <section id="price" class="max-container">
-      <div class="top__container">
-        <h2 class="price__title">견적문의</h2>
-        <p class="price__description">견적요청/상담문의 주시면 빠른 검토 후 피트백드리겠습니다.</p>
-      </div>
-      <form method="" class="price__forms">
-        <div class="price__form">
-          <div class="price__input">
-            <label class="input__title">이름</label>
-            <input class="input__place" type="text" placeholder="이름을 입력해주세요">
-          </div>
-          <div class="price__input">
-            <label class="input__title">연락처</label>
-            <input class="input__place" type="tel" placeholder="연락처를 입력해주세요">
-          </div>
-          <div class="price__input">
-            <label class="input__title">이메일</label>
-            <input class="input__place" type="email" placeholder="이메일을 입력해주세요">
-          </div>
-          <div>
-            <label class="input__title">문의하실 서비스</label>
-            <div class="service__items">
-              <div class="service__item">
-                <input class="input__checkbox" type="checkbox">
-                <span class="service__text">홈페이지</span>
-              </div>
-              <div class="service__item">
-                <input class="input__checkbox" type="checkbox">
-                <span class="service__text">어플리케이션</span>
-              </div>
-              <div class="service__item">
-                <input class="input__checkbox" type="checkbox">
-                <span class="service__text">모바일</span>
-              </div>
-              <div class="service__item">
-                <input class="input__checkbox" type="checkbox">
-                <span class="service__text">반응형</span>
-              </div>
-              <div class="service__item">
-                <input class="input__checkbox" type="checkbox">
-                <span class="service__text">쇼핑몰</span>
-              </div>
-              <div class="service__item">
-                <input class="input__checkbox" type="checkbox">
-                <span class="service__text">리뉴얼</span>
-              </div>
-            </div>
-          </div>
-          
-          <div class="price__input">
-            <label class="input__title">첨부파일</label>
-            <input class="input__place" type="file">
-          </div>
-          <div class="form__comments">
-            <p class="form__comment">
-              참고사이트를 남겨주시면 보다 정확한 견적이 가능합니다. 용량이 클경우
-              <a href="mailto:help@gmail.com" class="mailto">help@gmail.com</a> 으로 메일 보내주세요.
-            </p>
-          </div>
-          <div class="price__input">
-            <label class="input__title">문의내용</label>
-            <textarea class="textarea__place" placeholder="문의하실 내용을 입력해주세요."></textarea>
-          </div>
-          <div class="price__input">
-            <p class="input__title">개인정보 수집 및 이용 동의</p>
-          </div>
-          <div class="agree__box">
-            <div>
-              <input class="input__checkbox" type="checkbox">
-              <span>개인정보 수집 및 이용에 동의합니다.</span>
-            </div>
-            <div>
-              <a href="#">전문보기</a>
-            </div>
-          </div>
-        </div>
-      </form>
-      <button class="price__btn"><a href="#">견적문의하기</a></button>
-    </section>
-    <!-- end Price section -->
+    <!-- board read -->
+    <section id="customer">
+      <div class="max-container">
+        <div id="board__read__form">
 
+          <div class="write__btns">
+            <button class="btn__list" type="button" onclick="location.href='customer_list.html'">목록</button>
+            <button class="btn__write" type="button" onclick="location.href='customer_write.html'">글쓰기</button>
+          </div>
+
+          <div class="write__user__wrap">
+
+            <div class="read__top">
+              <div class="read__title">
+                <span>제목:</span>
+                <span>곧 봄이 오네요.. 여행을 떠나요..</span>
+              </div>
+  
+              <div class="write__user">
+                <div class="write__user__info">
+                  <img class="write__user__icon" src="./images/icon/icons8-girl-64.png" alt="글쓴이 아이콘">
+                  <span>글쓴이 :</span>
+                  <span>밤양갱</span>
+                </div>
+                <div class="write__user__date">
+                  <span class="date">24.03.09</span>
+                  <span class="time">14:53</span>
+                </div>
+              </div>
+              
+            </div>
+            
+            <div class="read__content">
+              우리나라 방방곡곡 여행을 떠나요..
+              우리나라 방방곡곡 여행을 떠나요..
+              우리나라 방방곡곡 여행을 떠나요..
+              우리나라 방방곡곡 여행을 떠나요..
+            </div>
+
+          </div>
+
+          
+
+          <!-- 뎃글 -->
+          <div class="comment__form">
+            <div class="comment__top__title">
+              <span>댓글</span>
+              <span class="comment__count">0</span>
+            </div>
+
+            <div class="comment__wrap">
+              <div class="comment__user__wrap">
+                <div class="comment__user">
+                  <img class="comment__user__icon" src="./images/icon/icons8-boy-64.png" alt="뎃글쓴이 아이콘">
+                  <span>고구마양갱</span>
+                </div>
+                <div class="comment__user__date">
+                  <span class="comment__date">24.03.09</span>
+                  <span class="comment__time">14:53</span>
+                </div>
+              </div>
+
+              <div class="comment__read__content">
+                <span>강원도 동해바다로 떠나요~~</span>
+              </div>
+
+              <div class="comment__btns">
+                <button class="comment__btn" type="button">
+                  <i class="fa-regular fa-thumbs-up"></i>
+                  <span class="cnt">0</span>
+                </button>
+                <button class="comment__btn" type="button">
+                  <i class="fa-regular fa-thumbs-down"></i>
+                  <span class="cnt">0</span>
+                </button>
+                <button class="comment__btn" type="button">
+                  <span>답글달기</span>
+                </button>
+                <button class="comment__btn--red" type="button">
+                  <span>신고</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- 데 뎃글 -->
+            <div class="comment__sub__wrap">
+              <div class="comment__sub_backcolor">
+                <i class="fa-solid fa-arrow-turn-up"></i>
+                <div class="comment__user__wrap">
+                  <div class="comment__user">
+                    <img class="comment__user__icon" src="./images/icon/icons8-boy-64.png" alt="뎃글쓴이 아이콘">
+                    <span>고구마양갱</span>
+                  </div>
+                  <div class="comment__user__date">
+                    <span class="comment__date">24.03.09</span>
+                    <span class="comment__time">14:53</span>
+                  </div>
+                </div>
+
+                <div class="comment__read__content">
+                  <span>강원도 동해바다로 떠나요~~</span>
+                </div>
+
+                <div class="comment__btns">
+                  <button class="comment__btn" type="button">
+                    <i class="fa-regular fa-thumbs-up"></i>
+                    <span class="cnt">0</span>
+                  </button>
+                  <button class="comment__btn" type="button">
+                    <i class="fa-regular fa-thumbs-down"></i>
+                    <span class="cnt">0</span>
+                  </button>
+                  <button class="comment__btn" type="button">
+                    <span>답글달기</span>
+                  </button>
+                  <button class="comment__btn--red" type="button">
+                    <span>신고</span>
+                  </button>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- 뎃글 쓰기-->
+            <div class="comment__write__btns">
+              <div class="comment__write__wrap">
+                <textarea class="comment__write__area" style="resize:none"></textarea>
+                <button class="commment__write__btn" type="button">등록</button>
+              </div>
+              <div class="comment__sub__btn">
+                <input class="input__checkbox" type="checkbox">
+                <label>관리자만 보기</label>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+    </section>
 
     <!-- Arrow Up -->
     <aside id="arrow">
