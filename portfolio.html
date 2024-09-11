@@ -25,8 +25,7 @@
   <!-- SCRIPT -->
   <script type="module" src="./src/main.js" defer></script>
   <script type="module" src="./src/projects.js" defer></script>
-  <script type="module" src="./src/activ_menu.js" defer></script>
-  <script type="module" src="./src/type.js" defer></script>
+
   <script type="module" src="./src/navbar.js" defer></script>
   <!-- CSS -->
   <link rel="stylesheet" href="./css/styles.css">
@@ -36,21 +35,24 @@
 <body>
   <!-- Header -->
   <header class="header">
-    <div class="header__logo">
-      <img class="header__logo__img" src="./images/futterfly-re-bg.png" alt="logo" />
-      <h1><a href="index.html" class="header__logo__title">NEXPARAN</a></h1>
-    </div>
-  
+    <a href="index.html">
+      <div class="header__logo">
+        <img class="header__logo__img" src="./images/futterfly-re-bg.png" alt="logo" />
+        <h1 class="header__logo__title">NEXPARAN</h1>
+      </div>
+    </a>
+
     <nav class="header__nav">
       <ul class="header__menu">
         <li><a class="header__menu__item active" href="index.html">홈</a></li>
-        <li><a class="header__menu__item" href="portfolio.html">포트폴리오</a></li>
+        <li><a class="header__menu__item " href="shopping_mall.html">쇼핑몰제작</a></li>
+        <li><a class="header__menu__item " href="ad.html">온라인광고</a></li>
         <li><a class="header__menu__item" href="production_line.html">제작안내</a></li>
+        <li><a class="header__menu__item" href="portfolio.html">포트폴리오</a></li>
         <li><a class="header__menu__item" href="price.html">견적문의</a></li>
-        <li><a class="header__menu__item" href="customer_list.html">고객센터</a></li>
       </ul>
     </nav>
-  
+
     <div class="header__icon__wrap">
       <a class="header__icon" href="sign_in.html"><i class="fa-solid fa-user"></i></a>
       <a class="header__icon" href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
@@ -58,56 +60,65 @@
         <i class="fa-solid fa-bars"></i>
       </button>
     </div>
-  
   </header>
 
   <!--- #SIDEBAR -->
 
   <div id="sidebar">
+    <div class="side__top">
+      <div class="side__logo">
+        <img class="side__logo__img" src="./images/futterfly-re-bg.png" alt="logo" />
+        <h1 class="side__logo__title">NEXPARAN</h1>
+      </div>
+      <button class="nav__toggles toggle__close" aria-label="close menu">
+        <i class="fa-solid fa-x" name="close-outline" aria-hidden="true"></i>
+      </button>
+    </div>
 
-  <button class="nav__toggles toggle__close" aria-label="close menu">
-      <i class="fa-solid fa-x" name="close-outline" aria-hidden="true"></i>
-  </button>
-
-  <div class="sidebar__wrapper"></div>
-
-  <nav class="navbar">
+    <div class="sidebar__wrapper"></div>
+    <nav class="navbar">
       <ul class="navbar__list">
-          <li class="navbar__item">
-              <a href="index.html" class="navbar__link">홈</a>
-          </li>
-          <li class="navbar__item">
-              <a href="portfolio.html" class="navbar__link">포트폴리오</a>
-          </li>
-          <li class="navbar__item">
-              <a href="production_line.html" class="navbar__link">제작안내</a>
-          </li>
-          <li class="navbar__item">
-              <a href="price.html" class="navbar__link">견적문의</a>
-          </li>
-          <li class="navbar__item">
-              <a href="customer.html" class="navbar__link">고객센터</a>
-          </li>
-          
+        <li class="navbar__item">
+          <a href="index.html" class="navbar__link">홈</a>
+        </li>
+        <li class="navbar__item">
+          <a href="shopping_mall.html" class="navbar__link">쇼핑몰제작</a>
+        </li>
+        <li class="navbar__item">
+          <a href="ad.html" class="navbar__link">온라인광고</a>
+        </li>
+        <li class="navbar__item">
+          <a href="portfolio.html" class="navbar__link">포트폴리오</a>
+        </li>
+        <li class="navbar__item">
+          <a href="production_line.html" class="navbar__link">제작안내</a>
+        </li>
+        <li class="navbar__item">
+          <a href="price.html" class="navbar__link">견적문의</a>
+        </li>
+        <li class="navbar__item">
+          <a href="customer_list.html" class="navbar__link">고객센터</a>
+        </li>
       </ul>
-  </nav>
-
-  <div class="sidebar__wrapper"></div>
-
-  <button class="cart__btn__wrap">
-      <a class="cart__btn" href="cart.html">장바구니</a>
-  </button>
-
-  <div class="sidebar__wrapper"></div>
-
-  <ul class="sign__list">
+    </nav>
+    <div class="sidebar__wrapper"></div>
+    <div class="cart__btn__wrap">
+      <button class="cart__btn" type="button" onclick="location.href='cart.html'">
+        장바구니
+      </button>
+    </div>
+    <ul class="sign__list">
       <li>
-          <a class="sign__btn__small" href="sign_in.html">로그인</a>
+        <button class="sign__btn__small" type="button" onclick="location.href='sigh_in.html'">
+          로그인
+        </button>
       </li>
       <li>
-          <a class="sign__btn__small" href="sign_up.html">가입하기</a>
+        <button class="sign__btn__small" type="button" onclick="location.href='sigh_up.html'">
+          가입하기
+        </button>
       </li>
-  </ul>
+    </ul>
   </div>
 
   <div class="overlay" data-overlay data-nav-toggler></div>
@@ -116,27 +127,31 @@
   <main>
     <!-- Home -->
     <section id="home">
-      <div class="home__container max-container">
-
+      <div class="home__container">
+        <div class="page__header">
+          <div class="page__title__wrap">
+            <p class="page__title">포트폴리오</p>
+            <p class="price__description">모두가 만족하는 결과를 만들어드리겠습니다.</p>
+          </div>
+      
+          <!-- breadcrumb start -->
+          <div class="breadcrumb__container">
+            <ul class="breadcrumbs">
+              <li class="breadcrumb">
+                <a href="index.html"><span>Home</span></a>
+              </li>
+              <li class="breadcrumb">
+                <span>포트폴리오</span>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
+      
     </section>
-
-    <!-- breadcrumb start -->
-    <div class="breadcrumb__container">
-      <ul class="breadcrumbs">
-        <li class="breadcrumb">
-          <a href="index.html"><span>Home</span></a>
-        </li>
-        <li class="breadcrumb">
-          <span>포트폴리오</span>
-        </li>
-      </ul>
-    </div>
-    <!-- breadcrumb end -->
 
     <!-- portfolio -->
     <section id="portfolio" class="max-container">
-      <h2 class="title"></h2>
       <ul class="categories">
         <li>
           <button class="category category--selected" data-category="all">
@@ -159,6 +174,7 @@
           </button>
         </li>
       </ul>
+      
       <ul class="projects">
         <li class="project" data-type="front-end">
           <a href="#" target="_blank">
@@ -341,6 +357,25 @@
           </a>
         </li>
       </ul>
+
+      <div class="bl-page">
+        <ul class="pagination">
+          <li><a href="#!"><i class="fa-solid fa-angles-left"></i></a></li>
+          <li><a href="#!"><i class="fa-solid fa-chevron-left"></i></a></li>
+          <li><a href="#!">1</a></li>
+          <li class="active"><a href="#!">2</a></li>
+          <li><a href="#!">3</a></li>
+          <li><a href="#!">4</a></li>
+          <li><a href="#!">5</a></li>
+          <li><a href="#!">6</a></li>
+          <li><a href="#!">7</a></li>
+          <li><a href="#!">8</a></li>
+          <li><a href="#!">9</a></li>
+          <li><a href="#!">10</a></li>
+          <li><a href="#!"><i class="fa-solid fa-angle-right"></i></a></li>
+          <li><a href="#!"><i class="fa-solid fa-angles-right"></i></a></li>
+        </ul>
+      </div>
     </section>
 
     <!-- Arrow Up -->

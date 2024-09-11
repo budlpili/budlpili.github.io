@@ -27,7 +27,6 @@ document.addEventListener('scroll', () => {
     arrowUp.style.opacity = 0;
   }
 });
-
 // Arrow up 테두리 
   let calcScrollValue = () => {
   let scrollProgress = document.getElementById("arrow-up");
@@ -45,11 +44,18 @@ document.addEventListener('scroll', () => {
   scrollProgress.addEventListener("click", () => {
     document.documentElement.scrollTop = 0;
   });
-  scrollProgress.style.background = `conic-gradient(#03e8f9 ${scrollValue}%, #d7d7d7 ${scrollValue}%)`;
+  scrollProgress.style.background = `conic-gradient(#1b1e26 ${scrollValue}%, #d7d7d7 ${scrollValue}%)`;
   };
 
   window.onscroll = calcScrollValue;
   window.onload = calcScrollValue;
 
-// table sort
-
+// scroll_down 버튼을 아래로 스크롤시 투명하게 처리함
+const scrollDown = document.querySelector('.scroll__down__wrap');
+document.addEventListener('scroll', () => {
+  if(window.scrollY > homeHeight / 5) {
+    scrollDown.style.opacity = 0;
+  } else {
+    scrollDown.style.opacity = 1;
+  }
+});

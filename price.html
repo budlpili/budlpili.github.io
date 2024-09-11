@@ -33,21 +33,24 @@
 
   <!-- Header -->
   <header class="header">
-    <div class="header__logo">
-      <img class="header__logo__img" src="./images/futterfly-re-bg.png" alt="logo" />
-      <h1><a href="index.html" class="header__logo__title">NEXPARAN</a></h1>
-    </div>
-  
+    <a href="index.html">
+      <div class="header__logo">
+        <img class="header__logo__img" src="./images/futterfly-re-bg.png" alt="logo" />
+        <h1 class="header__logo__title">NEXPARAN</h1>
+      </div>
+    </a>
+
     <nav class="header__nav">
       <ul class="header__menu">
         <li><a class="header__menu__item active" href="index.html">홈</a></li>
-        <li><a class="header__menu__item" href="portfolio.html">포트폴리오</a></li>
+        <li><a class="header__menu__item " href="shopping_mall.html">쇼핑몰제작</a></li>
+        <li><a class="header__menu__item " href="ad.html">온라인광고</a></li>
         <li><a class="header__menu__item" href="production_line.html">제작안내</a></li>
+        <li><a class="header__menu__item" href="portfolio.html">포트폴리오</a></li>
         <li><a class="header__menu__item" href="price.html">견적문의</a></li>
-        <li><a class="header__menu__item" href="customer_list.html">고객센터</a></li>
       </ul>
     </nav>
-  
+
     <div class="header__icon__wrap">
       <a class="header__icon" href="sign_in.html"><i class="fa-solid fa-user"></i></a>
       <a class="header__icon" href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
@@ -55,55 +58,64 @@
         <i class="fa-solid fa-bars"></i>
       </button>
     </div>
-  
   </header>
 
   <!--- #SIDEBAR -->
 
   <div id="sidebar">
-
-    <button class="nav__toggles toggle__close" aria-label="close menu">
+    <div class="side__top">
+      <div class="side__logo">
+        <img class="side__logo__img" src="./images/futterfly-re-bg.png" alt="logo" />
+        <h1 class="side__logo__title">NEXPARAN</h1>
+      </div>
+      <button class="nav__toggles toggle__close" aria-label="close menu">
         <i class="fa-solid fa-x" name="close-outline" aria-hidden="true"></i>
-    </button>
+      </button>
+    </div>
 
     <div class="sidebar__wrapper"></div>
-
     <nav class="navbar">
-        <ul class="navbar__list">
-            <li class="navbar__item">
-                <a href="index.html" class="navbar__link">홈</a>
-            </li>
-            <li class="navbar__item">
-                <a href="portfolio.html" class="navbar__link">포트폴리오</a>
-            </li>
-            <li class="navbar__item">
-                <a href="production_line.html" class="navbar__link">제작안내</a>
-            </li>
-            <li class="navbar__item">
-                <a href="price.html" class="navbar__link">견적문의</a>
-            </li>
-            <li class="navbar__item">
-                <a href="customer.html" class="navbar__link">고객센터</a>
-            </li>
-            
-        </ul>
+      <ul class="navbar__list">
+        <li class="navbar__item">
+          <a href="index.html" class="navbar__link">홈</a>
+        </li>
+        <li class="navbar__item">
+          <a href="shopping_mall.html" class="navbar__link">쇼핑몰제작</a>
+        </li>
+        <li class="navbar__item">
+          <a href="ad.html" class="navbar__link">온라인광고</a>
+        </li>
+        <li class="navbar__item">
+          <a href="portfolio.html" class="navbar__link">포트폴리오</a>
+        </li>
+        <li class="navbar__item">
+          <a href="production_line.html" class="navbar__link">제작안내</a>
+        </li>
+        <li class="navbar__item">
+          <a href="price.html" class="navbar__link">견적문의</a>
+        </li>
+        <li class="navbar__item">
+          <a href="customer_list.html" class="navbar__link">고객센터</a>
+        </li>
+      </ul>
     </nav>
-
     <div class="sidebar__wrapper"></div>
-
-    <button class="cart__btn__wrap">
-        <a class="cart__btn" href="cart.html">장바구니</a>
-    </button>
-
-    <div class="sidebar__wrapper"></div>
-
+    <div class="cart__btn__wrap">
+      <button class="cart__btn" type="button" onclick="location.href='cart.html'">
+        장바구니
+      </button>
+    </div>
     <ul class="sign__list">
-        <li>
-            <a class="sign__btn__small" href="sign_in.html">로그인</a>
-        </li>
-        <li>
-            <a class="sign__btn__small" href="sign_up.html">가입하기</a>
-        </li>
+      <li>
+        <button class="sign__btn__small" type="button" onclick="location.href='sigh_in.html'">
+          로그인
+        </button>
+      </li>
+      <li>
+        <button class="sign__btn__small" type="button" onclick="location.href='sigh_up.html'">
+          가입하기
+        </button>
+      </li>
     </ul>
   </div>
 
@@ -112,30 +124,33 @@
   <main>
     <!-- Home -->
     <section id="home">
-      <div class="home__container max-container">
+      <div class="home__container">
+        <div class="page__header">
+          <div class="page__title__wrap">
+            <p class="page__title">견적문의</p>
+            <p class="price__description">견적요청/상담문의 주시면 빠른 검토 후 피트백드리겠습니다.</p>
+          </div>
 
+          <!-- breadcrumb start -->
+          <div class="breadcrumb__container">
+            <ul class="breadcrumbs">
+              <li class="breadcrumb">
+                <a href="index.html"><span>Home</span></a>
+              </li>
+              <li class="breadcrumb">
+                <span>견적문의</span>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
+
     </section>
 
-    <!-- breadcrumb start -->
-    <div class="breadcrumb__container">
-      <ul class="breadcrumbs">
-        <li class="breadcrumb">
-          <a href="index.html"><span>Home</span></a>
-        </li>
-        <li class="breadcrumb">
-          <span>견적문의</span>
-        </li>
-      </ul>
-    </div>
-    <!-- breadcrumb end -->
 
     <!-- Price start -->
     <section id="price" class="max-container">
-      <div class="top__container">
-        <h2 class="price__title">견적문의</h2>
-        <p class="price__description">견적요청/상담문의 주시면 빠른 검토 후 피트백드리겠습니다.</p>
-      </div>
+
       <form method="" class="price__forms">
         <div class="price__form">
           <div class="price__input">
@@ -152,38 +167,40 @@
           </div>
           <div>
             <label class="input__title">문의하실 서비스</label>
-            <div class="service__items">
-              <div class="service__item">
+            <div class="price__items">
+              <div class="price__item">
                 <input class="input__checkbox" type="checkbox">
                 <span class="service__text">홈페이지</span>
               </div>
-              <div class="service__item">
+              <div class="price__item">
                 <input class="input__checkbox" type="checkbox">
                 <span class="service__text">어플리케이션</span>
               </div>
-              <div class="service__item">
+              <div class="price__item">
                 <input class="input__checkbox" type="checkbox">
                 <span class="service__text">모바일</span>
               </div>
-              <div class="service__item">
+              <div class="price__item">
                 <input class="input__checkbox" type="checkbox">
                 <span class="service__text">반응형</span>
               </div>
-              <div class="service__item">
+              <div class="price__item">
                 <input class="input__checkbox" type="checkbox">
                 <span class="service__text">쇼핑몰</span>
               </div>
-              <div class="service__item">
+              <div class="price__item">
                 <input class="input__checkbox" type="checkbox">
                 <span class="service__text">리뉴얼</span>
               </div>
             </div>
           </div>
-          
-          <div class="price__input">
-            <label class="input__title">첨부파일</label>
-            <input class="input__place" type="file">
+
+          <div class="filebox">
+            <input class="file__place" value="첨부파일" placeholder="첨부파일">
+            <label for="file">첨부파일</label>
+            <input type="file" id="file">
           </div>
+
           <div class="form__comments">
             <p class="form__comment">
               참고사이트를 남겨주시면 보다 정확한 견적이 가능합니다. 용량이 클경우
@@ -203,7 +220,7 @@
               <span>개인정보 수집 및 이용에 동의합니다.</span>
             </div>
             <div>
-              <a href="#">전문보기</a>
+              <a href="./privacy.html">전문보기</a>
             </div>
           </div>
         </div>
@@ -211,7 +228,6 @@
       <button class="price__btn"><a href="#">견적문의하기</a></button>
     </section>
     <!-- end Price section -->
-
 
     <!-- Arrow Up -->
     <aside id="arrow">

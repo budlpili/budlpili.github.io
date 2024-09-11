@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO -->
+    <title>Mare&#39;s Site</title>
+    <meta name="description" content="NEXPARAN website" />
+    <link rel="shortcut icon" href="./images/futterfly.ico" type="image/x-icon">
+    <!-- OG (Open Graph Data) -->
+    <meta property="og:title" content="NEXPARAN website" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://budlpili.github.io/nexparan_home/" />
+    <meta property="og:image" content="https://budlpili.github.io/nexparan_home/images/og.webp" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/f2660783e0.js" crossorigin="anonymous"></script>
+    <!-- Typeit -->
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+    <!-- SCRIPT -->
+    <script type="module" src="./src/main.js" defer></script>
+    <script type="module" src="./src/projects.js" defer></script>
+    <script type="module" src="./src/navbar.js" defer></script>
+    <script type="module" src="./src/slider.js" defer></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/styles.css">
+
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <a href="index.html">
+            <div class="header__logo">
+                <img class="header__logo__img" src="./images/futterfly-re-bg.png" alt="logo" />
+                <h1 class="header__logo__title">NEXPARAN</h1>
+            </div>
+        </a>
+
+        <nav class="header__nav">
+            <ul class="header__menu">
+                <li><a class="header__menu__item active" href="index.html">홈</a></li>
+                <li><a class="header__menu__item " href="shopping_mall.html">쇼핑몰제작</a></li>
+                <li><a class="header__menu__item " href="ad.html">온라인광고</a></li>
+                <li><a class="header__menu__item" href="production_line.html">제작안내</a></li>
+                <li><a class="header__menu__item" href="portfolio.html">포트폴리오</a></li>
+                <li><a class="header__menu__item" href="price.html">견적문의</a></li>
+            </ul>
+        </nav>
+
+        <div class="header__icon__wrap">
+            <a class="header__icon" href="sign_in.html"><i class="fa-solid fa-user"></i></a>
+            <a class="header__icon" href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            <button class="nav__toggles toggle__open" aria-label="open menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!--- #SIDEBAR -->
+
+    <div id="sidebar">
+        <div class="side__top">
+            <div class="side__logo">
+                <img class="side__logo__img" src="./images/futterfly-re-bg.png" alt="logo" />
+                <h1 class="side__logo__title">NEXPARAN</h1>
+            </div>
+            <button class="nav__toggles toggle__close" aria-label="close menu">
+                <i class="fa-solid fa-x" name="close-outline" aria-hidden="true"></i>
+            </button>
+        </div>
+        
+        <div class="sidebar__wrapper"></div>
+        <nav class="navbar">
+            <ul class="navbar__list">
+                <li class="navbar__item">
+                    <a href="index.html" class="navbar__link">홈</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="shopping_mall.html" class="navbar__link">쇼핑몰제작</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="ad.html" class="navbar__link">온라인광고</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="portfolio.html" class="navbar__link">포트폴리오</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="production_line.html" class="navbar__link">제작안내</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="price.html" class="navbar__link">견적문의</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="customer_list.html" class="navbar__link">고객센터</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="sidebar__wrapper"></div>
+        <div class="cart__btn__wrap">
+            <button class="cart__btn" type="button" onclick="location.href='cart.html'">
+                장바구니
+            </button>
+        </div>
+        <ul class="sign__list">
+            <li>
+                <button class="sign__btn__small" type="button" onclick="location.href='sigh_in.html'">
+                    로그인
+                </button>
+            </li>
+            <li>
+                <button class="sign__btn__small" type="button" onclick="location.href='sigh_up.html'">
+                    가입하기
+                </button>
+            </li>
+        </ul>
+    </div>
+
+    <div class="overlay" data-overlay data-nav-toggler></div>
+
+    <!-- Main -->
+    <main>
+        <section id="home">
+            <div class="home__container">
+                <div class="page__header">
+                    <div class="page__title__wrap">
+                        <p class="page__title">온라인광고</p>
+                        <p class="price__description">광고비는 절감하고! 효율은 최대로!</p>
+                    </div>
+
+                    <!-- breadcrumb start -->
+                    <div class="breadcrumb__container">
+                        <ul class="breadcrumbs">
+                            <li class="breadcrumb">
+                                <a href="index.html"><span>Home</span></a>
+                            </li>
+                            <li class="breadcrumb">
+                                <span>온라인광고</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- AD tab -->
+        <section id="ad__wrap">
+            <!-- Tap style -->
+            <div class="tabs">
+                <input id="tab__keyword" type="radio" name="tab_item" checked>
+                <label class="tab__item" for="tab__keyword">검색광고</label>
+
+                <input id="tab__viral" type="radio" name="tab_item">
+                <label class="tab__item" for="tab__viral">바이럴마케팅</label>
+
+                <input id="tab__display" type="radio" name="tab_item">
+                <label class="tab__item" for="tab__display">디스플레이광고</label>
+
+                <input id="tab__network" type="radio" name="tab_item">
+                <label class="tab__item" for="tab__network">네트워크광고</label>
+
+                <input id="tab__sns" type="radio" name="tab_item">
+                <label class="tab__item" for="tab__sns">SNS마케팅</label>
+
+                <input id="tab__media" type="radio" name="tab_item">
+                <label class="tab__item" for="tab__media">언론홍보</label>
+
+
+                <div class="label__sliders">
+                    <!-- <div class="label__slider"></div> -->
+                </div>
+
+                <!-- AD key word -->
+                <div class="tab__content" id="tab__keyword__content">
+                    <section class="ad__content__wrap  max-container">
+                        <div class="ad__title__top">검색광고</div>
+                        <ul class="ad__contents">
+                            <li class="ad__content ad__content__img">
+                                <img src="./images/ad/ad_01.png" alt="keyword img">
+                                <div class="ad__text__wrap">
+                                    <p class="ad__title">
+                                        키워드 광고 란?
+                                    </p>
+                                    <p class="ad__description">
+                                        키워드 광고란 광고주님의 잠재 고객이 네이버/다음 등의 검색창에 키워드를 입력 했을 때, 광고주님의 사이트를 보여주는
+                                        검색 광고(Search AD)입니다. 광고주님의 사업 아이템과 관련된 다양한 키워드에 광고를 등록하면 수많은 잠재고객에게
+                                        광고주님의 사이트를 효과적으로 홍보할 수 있습니다.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="ad__content ad__content__img">
+                                <img src="./images/ad/ad_02.png" alt="keyword img">
+                                <div class="ad__text__wrap">
+
+                                    <p class="ad__title">키워드 광고의 특징</p>
+
+                                    <span class="ad__sub__title">
+                                        <i class="fa-solid fa-caret-right"></i>
+                                        정확한 타겟팅 & 높은 효율성
+                                    </span>
+                                    <p class="ad__description">
+                                        검색광고는 불특정 다수를 대상으로 광고를 노출하는 것이 아닌 광고주의 사이트와 관련된 특정 검색어에 관심이 있는 사용자에게
+                                        타겟팅 되어 노출되기 때문에 타 광고 대비 효율적입니다.
+                                    </p>
+                                    <span class="ad__sub__title">
+                                        <i class="fa-solid fa-caret-right"></i>
+                                        저렴하고 합리적인 광고비용
+                                    </span>
+                                    <p class="ad__description">
+                                        TV광고, 신문광고 등 다른 광고상품에 비해 상대적으로 저렴한 비용으로 광고를 집행할 수 있습니다.
+                                        키워드 인기도 및 광고 클릭량에 따라 광고 비용이 책정되므로 광고예산 범위 내에서 합리적인 광고 집행이 가능합니다.
+                                    </p>
+                                    <span class="ad__sub__title">
+                                        <i class="fa-solid fa-caret-right"></i>
+                                        광고효과(ROI) 측정이 가능
+                                    </span>
+                                    <p class="ad__description">
+                                        몇 번의 광고가 노출되었고, 몇 명이 광고를 클릭하였으며, 몇 명이 구매로 이어졌는지에 대한 데이터 측정을 통해,
+                                        구체적이고 정확한 광고효과 분석이 가능합니다.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="ad__content ad__content__img">
+                                <img src="./images/ad/ad_03.png" alt="keyword img">
+                                <div class="ad__text__wrap">
+
+                                    <p class="ad__title">키워드 광고의 종류</p>
+
+                                    <p class="ad__description">
+                                        키워드광고는 광고비 지불 방식에 따라 크게 CPC/CPT(CPM)방식의 상품으로 구분됩니다.
+                                    </p>
+                                    <span class="ad__sub__title">
+                                        <i class="fa-solid fa-caret-right"></i>
+                                        CPC
+                                    </span>
+                                    <p class="ad__description">
+                                        사용자들에 의해 클릭이 발생한 경우에만 광고비를 지불하는 종량제 방식의 키워드 광고 상품입니다.
+                                        (네이버 클릭초이스, 다음 프리미엄링크 등)
+                                    </p>
+
+                                    <span class="ad__sub__title">
+                                        <i class="fa-solid fa-caret-right"></i>
+                                        CPT / CPM
+                                    </span>
+                                    <p class="ad__description">
+                                        클릭량에 상관없이 일정기간 동안 노출이 보장되는 정액제 방식의 키워드광고 상품입니다.
+                                        (네이버 브랜드 검색, 다음 스페셜링크 등)
+                                    </p>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </section>
+                </div>
+                <!-- AD viral -->
+                <div class="tab__content" id="tab__viral__content">
+                    <section class="ad__content__wrap">
+                        <div class="ad__title__top">바이럴마케팅</div>
+                        <ul class="ad__contents">
+                            <li class="ad__content">
+                                <div class="ad__text__wrap">
+                                    <div class="flex_center">
+                                        <div>
+                                            <p class="ad__title">
+                                                브랜드블로그
+                                            </p>
+                                            <p class="ad__description">
+                                                기업 정보, 서비스, 이벤트, 상품을 홍보할 수 있는 바이럴 마케팅입니다.
+                                                블로그 포스팅을 통해 포털 사이트 내 효과적인 정보 노출이 가능하며, 핵심고객 및 잠재고객과의 양방향 의사소통이 가능합니다.
+                                            </p>
+                                        
+                                            <span class="ad__sub__title">
+                                                <i class="fa-solid fa-caret-right"></i>
+                                                Strength : 다수의 브랜드 블로그를 운영한 전문 필진의 체계적인 관리
+                                            </span>
+                                            <ol class="ad__description">
+                                                <li>
+                                                    기업 특성에 맞는 차별화 된 컨셉 기획
+                                                </li>
+                                                <li>
+                                                    전문성 높은 콘텐츠로 브랜드 신뢰 확보
+                                                </li>
+                                                <li>
+                                                    자사와 관련도 높은 이슈 콘텐츠 제작으로 노출 커버리지 극대화
+                                                </li>
+                                                <li>
+                                                    하루 1건 이상의 포스팅을 통해 콘텐츠 축적 및 블로그 품질지수 향상
+                                                </li>
+                                                <li>
+                                                    친근한 톤&매너 사용으로 커뮤니케이션 활성화
+                                                </li>
+                                            </ol>
+                                        </div>
+                                        <img src="./images/ad/ad_04.png" alt="keyword img">
+                                    </div>
+                                    
+                                    <span class="ad__sub__title">
+                                        <i class="fa-solid fa-caret-right"></i>
+                                        Process : 기업 특성에 맞는 운영 컨셉 기획 → 콘텐츠 제작 → 모니터링 및 관리
+                                        <img class="mt-2rem" src="./images/ad/sub0202_obj02.gif" alt="">
+                                    </span>
+                                </div>
+                            </li>
+                            <li class="ad__content">
+                                <div class="ad__text__wrap">
+                                    <p class="ad__title">
+                                        블로그 체험단
+                                    </p>
+                                    <p class="ad__description">
+                                        소비자들에게 가장 쉽고 빠르게 다가갈 수 있는 바이럴마케팅 입니다.<br>
+                                        상품, 프로모션, 서비스, 이벤트 등의 다양한 카테고리에서 진행되며, 상품 및 서비스 체험 후 생생한 후기를 제공합니다.<br>
+                                        스토리텔링 형식으로 몰입도 증가 및 신뢰도 높은 콘텐츠 제작은 물론 키워드 검색을 통한 검색유입자에 2차 노출되어 파급력 높은 확산이 가능합니다.<br>
+                                    </p>
+                                    <img class="mt-4rem" src="./images/ad/sub0202_obj03.gif" width="100%">
+                                </div>
+                            </li>
+                            <li class="ad__content">
+                                <div class="ad__text__wrap">
+                                        <span class="ad__sub__title">
+                                            <i class="fa-solid fa-caret-right"></i>
+                                            Strength : 다수의 블로그 체험단 보유
+                                        </span>
+                                        <ol class="ad__description">
+                                            <li>
+                                                방문자, 이웃 수, 블로그 품질을 파악하여 최적의 블로그 체험단 섭외
+                                            </li>
+                                            <li>
+                                                생생한 후기 콘텐츠 제작으로 제품 및 서비스 관심 증가
+                                            </li>
+                                            <li>
+                                                콘텐츠의 양적증가를 통해 포털 사이트 내 점유율 상승
+                                            </li>
+                                            <li>
+                                                자사로의 콘텐츠 귀속을 통해 저작권 이슈 발생 방지
+                                            </li>
+                                            <li>
+                                                1:1 전담배치를 통한 콘텐츠 검수 및 모니터링
+                                            </li>
+                                        </ol>
+                                    
+                                    <span class="ad__sub__title">
+                                        <i class="fa-solid fa-caret-right"></i>
+                                        Process : 브랜드 특성을 고려한 블로그 섭외 → 가이드 제작 → 리뷰 콘텐츠 생성
+                                        <img class="mt-2rem" src="./images/ad/sub0202_obj04.gif" alt="">
+                                    </span>
+                                </div>
+                            </li>
+                            <li class="ad__content">
+                                <div class="ad__text__wrap">
+                                    <div class="flex_center">
+                                        <div>
+                                            <p class="ad__title">
+                                                포스트
+                                            </p>
+                                            <p class="ad__description">
+                                                모바일에 최적화된 템플릿과 레이아웃으로 관심사별 태그로 원하는 정보들을 찾고, 나만의 노하우와 팁을 담은 포스트를 발행할 수 있는
+                                                상품입니다.또한 사진, 동영상은 물론 사운드 효과, 글감 첨부, 퀴즈 등 다양한 요소를 첨부하여 풍성한 콘텐츠를 만들 수 있습니다.
+                                            </p>
+                                        
+                                            <span class="ad__sub__title">
+                                                <i class="fa-solid fa-caret-right"></i>
+                                                Strength : 주력 키워드의 노출 선점 가능
+                                            </span>
+                                            <ol class="ad__description">
+                                                <li>
+                                                    모바일 중심의 가독성 높은 콘텐츠 제작
+                                                </li>
+                                                <li>
+                                                    ‘불러오기’를 통해 블로그와 포스트의 연동성 확보
+                                                </li>
+                                                <li>
+                                                    평균 1,500회 이상의 높은 조회수 달성
+                                                </li>
+                                            </ol>
+                                        </div>
+                                        <img src="./images/ad/ad_05.png" alt="keyword img">
+                                    </div>
+                                    <img class="mt-2rem" src="./images/ad/sub0202_obj06.gif" alt="">
+                                </div>
+                            </li>
+                            <li class="ad__content">
+                                <div class="ad__text__wrap">
+                                    <div class="flex_center">
+                                        <div>
+                                            <p class="ad__title">
+                                                페이스북
+                                            </p>
+                                            <p class="ad__description">
+                                                페이스북 팬페이지를 개설하여 고객에게 자사 정보를 공유합니다. 브랜드콘텐츠와 캐쥬얼콘텐츠의 적절한 분배,
+                                                참여도 높은 이벤트 기획, 요일 별 반응 분석을 통해 효과적인 운영이 가능합니다.
+                                            </p>
+                                        
+                                            <span class="ad__sub__title">
+                                                <i class="fa-solid fa-caret-right"></i>
+                                                Strength : 필진 캐릭터, 콘텐츠 등록 내용, 업로드 시간대를 고려한 효율적인 운영
+                                            </span>
+                                            <ol class="ad__description">
+                                                <li>
+                                                    콘텐츠 등록 주기에 기반한 업로드로 효율성 증대
+                                                </li>
+                                                <li>
+                                                    필진캐릭터의 명확한 설정으로 팬의 몰입도 증가
+                                                </li>
+                                                <li>
+                                                    양방향 커뮤니케이션으로 충성고객 확보
+                                                </li>
+                                                <li>
+                                                    가독성 높은 이미지 콘텐츠 제작
+                                                </li>
+                                                <li>
+                                                    실시간 응대를 통해 상담창구로써의 역할 가능
+                                                </li>
+                                            </ol>
+                                        </div>
+                                        <img src="./images/ad/ad_06.png" alt="keyword img">
+                                    </div>
+                                    <img class="mt-2rem" src="./images/ad/sub0202_obj08.gif" alt="">
+                                </div>
+                            </li>
+                            <li class="ad__content">
+                                <div class="ad__text__wrap">
+                                    <div class="flex_center">
+                                        <div>
+                                            <p class="ad__title">
+                                                카카오스토리
+                                            </p>
+                                            <p class="ad__description">
+                                                카카오스토리는 국내 최대 메신저인 카카오톡을 기반으로 한 SNS 채널입니다.
+                                                기업의 정보, 프로모션, 혜택을 ‘소식받기’를 통해 간단하게 받아볼 수 있습니다. 카카오톡 사용자 중 90% 이상이 이용하며
+                                                높은 접근성으로 고객 커버리지가 넓은 것이 장점입니다.비용 대비 효율적인 마케팅이 가능합니다.
+                                            </p>
+                                        </div>
+                                        <img src="./images/ad/ad_07.png" alt="keyword img">
+                                    </div>
+                                    <img class="mt-2rem" src="./images/ad/sub0202_obj10.gif" alt="">
+                                </div>
+                            </li>
+                            <li class="ad__content">
+                                <div class="ad__text__wrap">
+                                    <span class="ad__sub__title">
+                                        <i class="fa-solid fa-caret-right"></i>
+                                        Strength : 국내 최대 이용자를 기반으로 한 효율적인 마케팅 가능
+                                    </span>
+                                    <ol class="ad__description">
+                                        <li>
+                                            친구 수 제한이 없으며 하루 3회 소식 보내기 가능
+                                        </li>
+                                        <li>
+                                            한글 ID로 검색 및 고객 접근 용이
+                                        </li>
+                                        <li>
+                                            ‘소식 받기’ 클릭 시 친구의 친구에게 2차 확산 가능
+                                        </li>
+                                        <li>
+                                            30 ~ 50대의 공감을 이끌어 낼 수 있는 콘텐츠 제작으로 정보 확산 극대화
+                                        </li>
+                                        
+                                    </ol>
+                                    <span class="ad__sub__title">
+                                        <i class="fa-solid fa-caret-right"></i>
+                                        Point : 카카오스토리의 장점을 살려 효율적인 마케팅을 위한 중요 포인트
+                                    </span>
+                                    <ol class="ad__description">
+                                        <li>
+                                            기업 컨셉에 맞는 스코리 구성 (프로필 / 디자인 페이지 / 필진 / 콘텐츠 UI / 톤&매너)
+                                        </li>
+                                        <li>
+                                            하루 1~2건의 콘텐츠 제작 및 소식 보내기 진행
+                                        </li>
+                                        <li>
+                                            실시간 운영을 통해 문의에 대한 즉각적인 응대
+                                        </li>
+                                        <li>
+                                            공유하기 이벤트를 통해 추가적인 친구 확보 가능
+                                        </li>
+                                    </ol>
+                                    <img class="mt-2rem" src="./images/ad/sub0202_obj11.gif" alt="">
+                                </div>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+
+                <!-- AD display -->
+                <div class="tab__content" id="tab__display__content">
+                    <section class="ad__content__wrap">
+                        <div class="ad__title__top">디스플레이광고</div>
+                        <ul class="ad__contents">
+                            <li class="ad__content ad__content__img">
+                                <img src="./images/ad/ad_08.png" alt="keyword img">
+                                <div class="ad__text__wrap">
+                                    <p class="ad__title">
+                                        디스플레이 광고 란?
+                                    </p>
+                                    <p class="ad__description">
+                                        디스플레이 AD는 원하는 모든 소비자와 만날 수 있는 쉽고 다양한 새로운 방법입니다.
+                                        <br>
+                                        <br>
+                                        이미지, 플래쉬, 동영상 등 다양한 형태의 배너를 이용해 인터넷 이용자의 이목을 집중시키고 비교적 짧은 기간에 제품정보,
+                                        브랜드 이미지 등을 전달, 노출이 보장됨으로써 단시간 내에 많은 광고 노출로 브랜드 홍보에 효과적입니다. 더불어 사용자 참여와
+                                        재미 유도, 풍부한 정보제공 등의 많은 표현기법으로 인터렉티브 요소와 엑티브한 효과를 동시에 줄 수 있는 상품 입니다.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="ad__content ad__content__img">
+                                <img src="./images/ad/ad_09.png" alt="keyword img">
+                                <div class="ad__text__wrap">
+                    
+                                    <p class="ad__title">최적의 크리에이티브를 구현하는 플랫폼</p>
+                                    <p class="ad__description">
+                                        소비자의 매체 이용행태가 TV스크린을 떠나 디지털 미디어 소비가 활성화 되고 있습니다.
+                                        디지털 미디어를 통해 콘텐츠 소비가 활성화 되면서 디스플레이 온라인 디스플레이 광고의 가치가 지속적으로 성장하고 있습니다.
+                                        신비웹의 최고의 크리에이티브와 함께 성공적인 비즈니스를 경험하세요!
+                                    </p>
+                                    
+                                </div>
+                            </li>
+                            <li class="ad__content ad__content__img">
+                                <img src="./images/ad/ad_10.png" alt="keyword img">
+                                <div class="ad__text__wrap">
+                    
+                                    <p class="ad__title">배너광고의 장점</p>
+                                    <ol class="ad__description">
+                                        <li>
+                                            사용자의 주목도를 높여 임팩트 있는 브랜드 메시지를 전달
+                                        </li>
+                                        <li>
+                                            광범위한 도달율로 단기간 내 브랜딩 및 프로모션 홍보 가능
+                                        </li>
+                                        <li>
+                                            리치 미디어를 활용한 쌍방향 커뮤니케이션으로 관심 유도
+                                        </li>
+                                    </ol>
+                                    
+                                </div>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+
+                <!-- AD network -->
+                <div class="tab__content" id="tab__network__content">
+                    <section class="ad__content__wrap">
+                        <div class="ad__title__top">네트워크광고</div>
+                        <ul class="ad__contents">
+                            <li class="ad__content ad__content__img">
+                                <img src="./images/ad/ad_11.png" alt="keyword img">
+                                <div class="ad__text__wrap">
+                                    <p class="ad__title">
+                                        네트워크 광고란?
+                                    </p>
+                                    <p class="ad__description">
+                                        네트워크 광고는 국내를 대표하는 언론사, 블로그, 커뮤니티 등에 한 번에 광고를 진행 할 수 있는 매체로
+                                        높은 도달률을 가지고 있습니다.
+                                        <br><br>
+                                        인터넷 사용자들의 이용행태 조사결과, 78% 이상의 시간을 검색이 아닌 다양한 콘텐츠 페이지에서 사용하고 있으며,
+                                        이 중 대다수가 계획하지 않았던 상품/서비스를 구매한 경험이 있는 것으로 확인되고 있습니다.
+                                        <br><br>
+                                        
+                                        네트워크 광고는 많은 노출량이 필요한 브랜드 광고나 이벤트 광고에 매우 효과적입니다.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="ad__content ad__content__img">
+                                <img src="./images/ad/sub0204_obj02.jpg" alt="">
+                            </li>
+                            <li class="ad__content">
+                                <div class="ad__text__wrap">
+                                    <p class="ad__title">
+                                        다양한 타겟 활용 및 효과적인 비용
+                                    </p>
+                                    <p class="ad__description">
+                                        다양한 타겟팅 기법(문맥, 관심사, 카테고리, 기기별, 인구통계, 게재위치, 리마케팅 등)에 따라 효과적인 타겟팅이 가능하여 잠재고객에게 효율적인 비용으로 노출될 수 있습니다.
+                                        네트워크 배너는 노출지면은 선택 할 수 있으며, 실시간 광고 효율에 따라 광고 소재 및 타겟팅 설정 변경이 가능합니다. 또한 사이트 방문자를 대상으로 한 리마케팅 기법은 방문자 대비
+                                        서비스 이용 비율을 비약적으로 향상 시켜줄 것입니다.
+                                    </p>
+                                    <img class="mt-4rem" src="./images/ad/sub0204_obj03.jpg" alt="">
+                                </div>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+
+                <!-- AD sns -->
+                <div class="tab__content" id="tab__sns__content">
+                    <section class="ad__content__wrap">
+                        <div class="ad__title__top">SNS마케팅</div>
+                        <ul class="ad__contents">
+                            <li class="ad__content ad__content__img">
+                                <div class="ad__text__wrap">
+                                    <p class="ad__title">
+                                        SNS 마케팅 이란?
+                                    </p>
+                                    <p class="ad__description">
+                                        SNS 마케팅이란 Social Networking Service의 약자로, 일반적인 광고에 비해 빠른 속도로 전파되는 특성을 가지고 있습니다.<br>
+                                        대한민국 국민의 90% 이상이 스마트폰 보유자이며, 그로 인해 SNS는 단연 No.1의 홍보수단으로 자리잡았습니다.<br>
+                                        대표적인 상품으로는 페이스북, 인스타그램, 트위터, 카카오스토리 등이 들 수 있습니다.<br>
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="ad__content ad__content__img">
+                                <img src="./images/ad/sub0205_obj01.jpg" alt="">
+                            </li>
+                            
+                            <li class="ad__content ad__content__img">
+                                <div class="ad__text__wrap">
+                                    <p class="ad__title">
+                                        상품특징
+                                    </p>
+                                    <ol class="ad__description">
+                                        <li>연령, 성별, 기기, 지역, 관심사 등의 세부적 타켓팅이 가능</li>
+                                        <li>자사특성에 맞는 브랜드 컨텐츠, 이벤트 기획홍보로 자연스런 Viral 효과 발생</li>
+                                        <li>다양한 렌딩 페이지를 구성</li>
+                                        <li>양방향 커뮤니케이션으로 충성고객 확보</li>
+                                    </ol>
+                                    <img class="mt-4rem" src="./images/ad/sub0205_obj06.jpg" alt="">
+                                </div>
+                                
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+
+                <!-- AD media -->
+                <div class="tab__content" id="tab__media__content">
+                    <section class="ad__content__wrap">
+                        <div class="ad__title__top">언론홍보</div>
+                        <ul class="ad__contents">
+                            <li class="ad__content ad__content__img">
+                                <div class="ad__text__wrap">
+                                    <div class="flex_left ad__contain">
+                                        <div class="ad__contain__left">
+                                            <p class="ad__title">
+                                                언론홍보란?
+                                            </p>
+                                            <p class="ad__description" style="width: 60%;">
+                                                언론홍보는 인터넷 주요포털 및 뉴스 섹션에 등록된 대부분의 언론사를 통해 기사를 작성하여 홍보하는 상품입니다.
+                                                뉴스기사는 광고라는 의식보단 이용자들에게 정보로 인식이 되기 때문에 <br>
+                                                신뢰도와 빠른 파급력을 가져올 수 있습니다.<br>
+                                                이런한 기사는 또 다시 SNS, 블로그, 카페, 지식iN 등에 스크랩 되어<br> 
+                                                또다른 형태로 노출이 됩니다.
+                                            </p>
+                                        </div>
+                                        <img class="ad__contain__right" src="./images/ad/ad_12.png" alt="">
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="ad__content">
+                                <div class="ad__text__wrap mt-4rem">
+                                    <p class="ad__title">
+                                        상품특징
+                                    </p>
+                                    <ol class="ad__description">
+                                        <li>주요언론사를 통해 자사홍보 내용의 보도자료를 국내 주요 포털 PC+모바일에 노출</li>
+                                        <li>보도자료에 작성된 내용들 중에서 관련키워드 검색시 노출</li>
+                                        <li>기사 송출 전 까다로운 검수과정을 거치며, 객관적인 정보성 위주에 초점을 둔 높은 홍보 효과</li>
+                                        <li>여러 매체를 통해 기사화가 되면서 자사 브랜드 가치가 상승</li>
+                                        <li>브랜드 렁칭, 이벤트, 이슈, 신제품 출시 등의 내용을 홍보하는데 매우 효과적</li>
+                                    </ol>
+                                    <img class="mt-4rem" src="./images/ad/sub0206_obj02.jpg" alt="">
+                                </div>
+                                
+                            </li>
+                            <li class="ad__content">
+                                <div class="ad__text__wrap">
+                                    <p class="ad__title">
+                                        진행과정
+                                    </p>
+                                    
+                                    <img class="mt-4rem" src="./images/ad/sub0206_obj03.jpg" alt="">
+                                </div>
+                                
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+
+
+            </div>
+        </section>
+
+        <!-- Arrow Up -->
+        <aside id="arrow">
+            <a id="arrow-up" href="#home" title="back to top">
+                <span id="arrow-up-value">&#8593;</span>
+            </a>
+        </aside>
+
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact" class="section">
+        <div class="footer__top max-container">
+
+            <div class="footer__brand">
+                <div class="footer__title">
+                    <img class="footer__logo__img" src="./images/futterfly-re-bg.png">
+                    <a href="#" class="footer__logo__title">NEXPARAN</a>
+                </div>
+
+                <ul class="footer__brand__lists">
+                    <li class="footer__brand__list">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <address class="contact__link address">Korea, Lorem.</address>
+                    </li>
+                    <li class="footer__brand__list">
+                        <i class="fa-solid fa-phone"></i>
+                        <a href="tel:+1234567890" class="contact__link" target="_blank" title="tel">
+                            +1234567890
+                        </a>
+                    </li>
+
+                </ul>
+                <ul class="footer__brand__lists">
+                    <li class="footer__brand__list">
+                        <ul class="brand__links">
+                            <li>
+                                <a href="#" class="contact__link--icon" target="_blank" title="my facebook link">
+                                    <i class="fa-brands fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="contact__link--icon" target="_blank" title="my instagram link">
+                                    <i class="fa-brands fa-square-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="contact__link--icon" target="_blank" title="my X-twitter link">
+                                    <i class="fa-brands fa-x-twitter"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </div>
+
+            <ul class="contact__links">
+
+                <li>
+                    <p class="contact__title">Help & Information</p>
+                </li>
+
+                <li>
+                    <a href="#" class="contact__link">Help & Contact Us</a>
+                </li>
+
+                <li>
+                    <a href="#" class="contact__link">Returns & Refunds</a>
+                </li>
+
+                <li>
+                    <a href="#" class="contact__link">Online Stores</a>
+                </li>
+
+                <li>
+                    <a href="#" class="contact__link">Terms & Conditions</a>
+                </li>
+            </ul>
+
+            <ul class="contact__links">
+
+                <li>
+                    <p class="contact__title">About Us</p>
+                </li>
+
+                <li>
+                    <a href="#" class="contact__link">About Us</a>
+                </li>
+
+                <li>
+                    <a href="#" class="contact__link">What We Do</a>
+                </li>
+
+                <li>
+                    <a href="#" class="contact__link">FAQ Page</a>
+                </li>
+
+                <li>
+                    <a href="#" class="contact__link">Contact Us</a>
+                </li>
+
+            </ul>
+
+            <div class="contact__links">
+                <p class="contact__title">Newsletter</p>
+                <form action="" class="footer__form">
+                    <input class="footer__email__field" type="email" name="email_address"
+                        placeholder="Your email address" required>
+                    <button class="footer__form__btn" type="submit">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer__bottom">
+            <p class="copyright">
+                &copy; 2024 All Rights Reserved by <a href="#" class="copyright__link">Nexparan</a>.
+            </p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

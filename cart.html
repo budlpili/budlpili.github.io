@@ -25,110 +25,128 @@
   <!-- SCRIPT -->
   <script type="module" src="./src/main.js" defer></script>
   <script type="module" src="./src/navbar.js" defer></script>
-  <script type="module" src="./src/counter.js" defer></script>
+  <script type="module" src="./src/quantity.js" defer></script>
   <!-- CSS -->
   <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
-  <!-- Header -->
-  <header class="header">
-    <div class="header__logo">
-      <img class="header__logo__img" src="./images/futterfly-re-bg.png" alt="logo" />
-      <h1><a href="index.html" class="header__logo__title">NEXPARAN</a></h1>
-    </div>
-  
-    <nav class="header__nav">
-      <ul class="header__menu">
-        <li><a class="header__menu__item active" href="index.html">홈</a></li>
-        <li><a class="header__menu__item" href="portfolio.html">포트폴리오</a></li>
-        <li><a class="header__menu__item" href="production_line.html">제작안내</a></li>
-        <li><a class="header__menu__item" href="price.html">견적문의</a></li>
-        <li><a class="header__menu__item" href="customer_list.html">고객센터</a></li>
-      </ul>
-    </nav>
-  
-    <div class="header__icon__wrap">
-      <a class="header__icon" href="sign_in.html"><i class="fa-solid fa-user"></i></a>
-      <a class="header__icon" href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
-      <button class="nav__toggles toggle__open" aria-label="open menu">
-        <i class="fa-solid fa-bars"></i>
-      </button>
-    </div>
-  
+    <!-- Header -->
+    <header class="header">
+      <a href="index.html">
+          <div class="header__logo">
+              <img class="header__logo__img" src="./images/futterfly-re-bg.png" alt="logo" />
+              <h1 class="header__logo__title">NEXPARAN</h1>
+          </div>
+      </a>
+
+      <nav class="header__nav">
+          <ul class="header__menu">
+              <li><a class="header__menu__item active" href="index.html">홈</a></li>
+              <li><a class="header__menu__item " href="shopping_mall.html">쇼핑몰제작</a></li>
+              <li><a class="header__menu__item " href="ad.html">온라인광고</a></li>
+              <li><a class="header__menu__item" href="production_line.html">제작안내</a></li>
+              <li><a class="header__menu__item" href="portfolio.html">포트폴리오</a></li>
+              <li><a class="header__menu__item" href="price.html">견적문의</a></li>
+          </ul>
+      </nav>
+
+      <div class="header__icon__wrap">
+          <a class="header__icon" href="sign_in.html"><i class="fa-solid fa-user"></i></a>
+          <a class="header__icon" href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+          <button class="nav__toggles toggle__open" aria-label="open menu">
+              <i class="fa-solid fa-bars"></i>
+          </button>
+      </div>
   </header>
 
   <!--- #SIDEBAR -->
-
+  
   <div id="sidebar">
-
-    <button class="nav__toggles toggle__close" aria-label="close menu">
-        <i class="fa-solid fa-x" name="close-outline" aria-hidden="true"></i>
-    </button>
-
-    <div class="sidebar__wrapper"></div>
-
-    <nav class="navbar">
-        <ul class="navbar__list">
-            <li class="navbar__item">
-                <a href="index.html" class="navbar__link">홈</a>
-            </li>
-            <li class="navbar__item">
-                <a href="portfolio.html" class="navbar__link">포트폴리오</a>
-            </li>
-            <li class="navbar__item">
-                <a href="production_line.html" class="navbar__link">제작안내</a>
-            </li>
-            <li class="navbar__item">
-                <a href="price.html" class="navbar__link">견적문의</a>
-            </li>
-            <li class="navbar__item">
-                <a href="customer.html" class="navbar__link">고객센터</a>
-            </li>
-            
-        </ul>
-    </nav>
-
-    <div class="sidebar__wrapper"></div>
-
-    <button class="cart__btn__wrap">
-        <a class="cart__btn" href="cart.html">장바구니</a>
-    </button>
-
-    <div class="sidebar__wrapper"></div>
-
-    <ul class="sign__list">
-        <li>
-            <a class="sign__btn__small" href="sign_in.html">로그인</a>
-        </li>
-        <li>
-            <a class="sign__btn__small" href="sign_up.html">가입하기</a>
-        </li>
-    </ul>
+      <div class="side__top">
+          <div class="side__logo">
+              <img class="side__logo__img" src="./images/futterfly-re-bg.png" alt="logo" />
+              <h1 class="side__logo__title">NEXPARAN</h1>
+          </div>
+          <button class="nav__toggles toggle__close" aria-label="close menu">
+              <i class="fa-solid fa-x" name="close-outline" aria-hidden="true"></i>
+          </button>
+      </div>
+      
+      <div class="sidebar__wrapper"></div>
+      <nav class="navbar">
+          <ul class="navbar__list">
+              <li class="navbar__item">
+                  <a href="index.html" class="navbar__link">홈</a>
+              </li>
+              <li class="navbar__item">
+                  <a href="shopping_mall.html" class="navbar__link">쇼핑몰제작</a>
+              </li>
+              <li class="navbar__item">
+                  <a href="ad.html" class="navbar__link">온라인광고</a>
+              </li>
+              <li class="navbar__item">
+                  <a href="portfolio.html" class="navbar__link">포트폴리오</a>
+              </li>
+              <li class="navbar__item">
+                  <a href="production_line.html" class="navbar__link">제작안내</a>
+              </li>
+              <li class="navbar__item">
+                  <a href="price.html" class="navbar__link">견적문의</a>
+              </li>
+              <li class="navbar__item">
+                  <a href="customer_list.html" class="navbar__link">고객센터</a>
+              </li>
+          </ul>
+      </nav>
+      <div class="sidebar__wrapper"></div>
+      <div class="cart__btn__wrap">
+          <button class="cart__btn" type="button" onclick="location.href='cart.html'">
+              장바구니
+          </button>
+      </div>
+      <ul class="sign__list">
+          <li>
+              <button class="sign__btn__small" type="button" onclick="location.href='sigh_in.html'">
+                  로그인
+              </button>
+          </li>
+          <li>
+              <button class="sign__btn__small" type="button" onclick="location.href='sigh_up.html'">
+                  가입하기
+              </button>
+          </li>
+      </ul>
   </div>
-
+  
   <div class="overlay" data-overlay data-nav-toggler></div>
 
   <main>
     <!-- Home -->
     <section id="home">
-      <div class="home__container max-container">
-        
+      <div class="home__container">
+        <div class="page__header">
+          <div class="page__title__wrap">
+            <p class="page__title">장바구니</p>
+            <p class="price__description">감사합니다.</p>
+          </div>
+  
+          <!-- breadcrumb start -->
+          <div class="breadcrumb__container">
+            <ul class="breadcrumbs">
+              <li class="breadcrumb">
+                <a href="index.html"><span>Home</span></a>
+              </li>
+              <li class="breadcrumb">
+                <span>장바구니</span>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
+      
     </section>
 
-    <!-- breadcrumb start -->
-    <div class="breadcrumb__container">
-      <ul class="breadcrumbs">
-        <li class="breadcrumb">
-          <a href="index.html"><span>Home</span></a>
-        </li>
-        <li class="breadcrumb">
-          <span>Cart</span>
-        </li>
-      </ul>
-    </div>
-    <!-- breadcrumb end -->
 
     <!-- start cart-section -->
     <section id="cart">
@@ -153,11 +171,16 @@
             <span>&#x20A9;</span> <span>165,000</span>
           </li>
           <li class="product__quantity" data-title="Quantity">
-            <div class="quantity">
-              <span class="minus">-</span>
-              <span class="counter"></span>
-              <span class="plus">+</span>
+            <div id="product_A_form" class="input-group">
+              <span class="input-group-btn">
+                <button class="btn-minus" type="button">-</button>
+              </span>
+              <input id="product_A_qty" type="text" class="item-quantity" value="01">
+              <span class="input-group-btn">
+                <button class="btn-add" type="button">+</button>
+              </span>
             </div>
+
           </li>
           <li class="product__total" data-title="Total">
             <span>&#x20A9;</span> 
@@ -182,11 +205,16 @@
             <span>&#x20A9;</span> <span>165,000</span>
           </li>
           <li class="product__quantity" data-title="Quantity">
-            <div class="quantity">
-              <span class="minus">-</span>
-              <span class="counter"></span>
-              <span class="plus">+</span>
+            <div id="product_A_form" class="input-group">
+              <span class="input-group-btn">
+                <button class="btn-minus" type="button">-</button>
+              </span>
+              <input id="product_A_qty" type="text" class="item-quantity" value="01">
+              <span class="input-group-btn">
+                <button class="btn-add" type="button">+</button>
+              </span>
             </div>
+
           </li>
           <li class="product__total" data-title="Total">
             <span>&#x20A9;</span> 
@@ -211,11 +239,16 @@
             <span>&#x20A9;</span> <span>165,000</span>
           </li>
           <li class="product__quantity" data-title="Quantity">
-            <div class="quantity">
-              <span class="minus">-</span>
-              <span class="counter"></span>
-              <span class="plus">+</span>
+            <div id="product_A_form" class="input-group">
+              <span class="input-group-btn">
+                <button class="btn-minus" type="button">-</button>
+              </span>
+              <input id="product_A_qty" type="text" class="item-quantity" value="01">
+              <span class="input-group-btn">
+                <button class="btn-add" type="button">+</button>
+              </span>
             </div>
+
           </li>
           <li class="product__total" data-title="Total">
             <span>&#x20A9;</span> 
@@ -235,48 +268,50 @@
             <input type="text" name="coupon__code" class="input__text" id="coupon__code" value=""
               placeholder="쿠폰 번호" />
             <button class="coupon__btn" type="submit">
-              <a class="btn__text">적용하기</a>
+              <a class="btn__text" href="#!">적용하기</a>
             </button>
           </div>
     
-          <button class="coupon__btn" type="submit">
-            <a class="btn__text">UPDATE CART</a>
+          <button class="coupon__update__btn" type="submit">
+            <a class="btn__text" href="#!">UPDATE CART</a>
           </button>
         </div>
       </form>
 
-
       <!-- cart_total -->
       <div class="cart__totals__wrap">
-        <h3 class="cart__title">Cart Totals</h3>
-        <form class="cart__totals">
-          <div class="sum__total" data-title="Sum-Total">
-            <div>합계 금액 :</div>
-            <p class="money__container">
-              <span class="prince__symbol">&#x20A9;</span>
-              <span>660,000</span>
-            </p>
+        <div class="box--right">
+          <h3 class="cart__title">Cart Totals</h3>
+          <form class="cart__totals">
+            <div class="sum__total" data-title="Sum-Total">
+              <div>합계 금액 :</div>
+              <p class="money__container">
+                <span class="prince__symbol">&#x20A9;</span>
+                <span>660,000</span>
+              </p>
+            </div>
+            <div class="sale__total" data-title="Sale-Total">
+              <div>할인금액 :</div>
+              <p class="money__container">
+                <span class="prince__symbol">&#x20A9;</span>
+                <span>60,000</span>
+              </p>
+            </div>
+            <div class="cart__total" data-title="Last-Total">
+              <div>총 합계금액 :</div>
+              <strong class="money__container">
+                <span class="prince__symbol">&#x20A9;</span>
+                <span>600,000</span>
+              </strong>
+            </div>
+          </form>
+          <div class="check__out">
+            <button class="check__out__btn" type="submit">
+              <a class="btn__text">결제하기</a>
+            </button>
           </div>
-          <div class="sale__total" data-title="Sale-Total">
-            <div>할인금액 :</div>
-            <p  class="money__container">
-              <span class="prince__symbol">&#x20A9;</span>
-              <span>60,000</span>
-            </p>
-          </div>
-          <div class="cart__total" data-title="Last-Total">
-            <div>총 합계금액 :</div>
-            <strong class="money__container">
-              <span class="prince__symbol">&#x20A9;</span>
-              <span>600,000</span>
-            </strong>
-          </div>
-        </form>
-        <div class="check__out">
-          <button class="check__out__btn" type="submit">
-            <a class="btn__text">결제하기</a>
-          </button>
         </div>
+      
       </div>
     </section>
     <!-- end cart-section -->

@@ -30,24 +30,26 @@
 </head>
 
 <body>
-
   <!-- Header -->
   <header class="header">
-    <div class="header__logo">
-      <img class="header__logo__img" src="./images/futterfly-re-bg.png" alt="logo" />
-      <h1><a href="index.html" class="header__logo__title">NEXPARAN</a></h1>
-    </div>
-  
+    <a href="index.html">
+      <div class="header__logo">
+        <img class="header__logo__img" src="./images/futterfly-re-bg.png" alt="logo" />
+        <h1 class="header__logo__title">NEXPARAN</h1>
+      </div>
+    </a>
+
     <nav class="header__nav">
       <ul class="header__menu">
         <li><a class="header__menu__item active" href="index.html">홈</a></li>
-        <li><a class="header__menu__item" href="portfolio.html">포트폴리오</a></li>
+        <li><a class="header__menu__item " href="shopping_mall.html">쇼핑몰제작</a></li>
+        <li><a class="header__menu__item " href="ad.html">온라인광고</a></li>
         <li><a class="header__menu__item" href="production_line.html">제작안내</a></li>
+        <li><a class="header__menu__item" href="portfolio.html">포트폴리오</a></li>
         <li><a class="header__menu__item" href="price.html">견적문의</a></li>
-        <li><a class="header__menu__item" href="customer_list.html">고객센터</a></li>
       </ul>
     </nav>
-  
+
     <div class="header__icon__wrap">
       <a class="header__icon" href="sign_in.html"><i class="fa-solid fa-user"></i></a>
       <a class="header__icon" href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
@@ -55,84 +57,97 @@
         <i class="fa-solid fa-bars"></i>
       </button>
     </div>
-  
   </header>
 
   <!--- #SIDEBAR -->
-
   <div id="sidebar">
+    <div class="side__top">
+      <div class="side__logo">
+        <img class="side__logo__img" src="./images/futterfly-re-bg.png" alt="logo" />
+        <h1 class="side__logo__title">NEXPARAN</h1>
+      </div>
+      <button class="nav__toggles toggle__close" aria-label="close menu">
+        <i class="fa-solid fa-x" name="close-outline" aria-hidden="true"></i>
+      </button>
+    </div>
 
-  <button class="nav__toggles toggle__close" aria-label="close menu">
-      <i class="fa-solid fa-x" name="close-outline" aria-hidden="true"></i>
-  </button>
-
-  <div class="sidebar__wrapper"></div>
-
-  <nav class="navbar">
+    <div class="sidebar__wrapper"></div>
+    <nav class="navbar">
       <ul class="navbar__list">
-          <li class="navbar__item">
-              <a href="index.html" class="navbar__link">홈</a>
-          </li>
-          <li class="navbar__item">
-              <a href="portfolio.html" class="navbar__link">포트폴리오</a>
-          </li>
-          <li class="navbar__item">
-              <a href="production_line.html" class="navbar__link">제작안내</a>
-          </li>
-          <li class="navbar__item">
-              <a href="price.html" class="navbar__link">견적문의</a>
-          </li>
-          <li class="navbar__item">
-              <a href="customer.html" class="navbar__link">고객센터</a>
-          </li>
-          
+        <li class="navbar__item">
+          <a href="index.html" class="navbar__link">홈</a>
+        </li>
+        <li class="navbar__item">
+          <a href="shopping_mall.html" class="navbar__link">쇼핑몰제작</a>
+        </li>
+        <li class="navbar__item">
+          <a href="ad.html" class="navbar__link">온라인광고</a>
+        </li>
+        <li class="navbar__item">
+          <a href="portfolio.html" class="navbar__link">포트폴리오</a>
+        </li>
+        <li class="navbar__item">
+          <a href="production_line.html" class="navbar__link">제작안내</a>
+        </li>
+        <li class="navbar__item">
+          <a href="price.html" class="navbar__link">견적문의</a>
+        </li>
+        <li class="navbar__item">
+          <a href="customer_list.html" class="navbar__link">고객센터</a>
+        </li>
       </ul>
-  </nav>
-
-  <div class="sidebar__wrapper"></div>
-
-  <button class="cart__btn__wrap">
-      <a class="cart__btn" href="cart.html">장바구니</a>
-  </button>
-
-  <div class="sidebar__wrapper"></div>
-
-  <ul class="sign__list">
+    </nav>
+    <div class="sidebar__wrapper"></div>
+    <div class="cart__btn__wrap">
+      <button class="cart__btn" type="button" onclick="location.href='cart.html'">
+        장바구니
+      </button>
+    </div>
+    <ul class="sign__list">
       <li>
-          <a class="sign__btn__small" href="sign_in.html">로그인</a>
+        <button class="sign__btn__small" type="button" onclick="location.href='sigh_in.html'">
+          로그인
+        </button>
       </li>
       <li>
-          <a class="sign__btn__small" href="sign_up.html">가입하기</a>
+        <button class="sign__btn__small" type="button" onclick="location.href='sigh_up.html'">
+          가입하기
+        </button>
       </li>
-  </ul>
+    </ul>
   </div>
-
+  
   <div class="overlay" data-overlay data-nav-toggler></div>
 
   <main>
     <!-- Home -->
     <section id="home">
-      <div class="home__container max-container">
-        
-      </div>
-    </section>
+      <div class="home__container">
+        <div class="page__header">
+          <div class="page__title__wrap">
+            <p class="page__title">로그인</p>
+            <p class="price__description">감사합니다</p>
+          </div>
 
-    <!-- breadcrumb start -->
-    <div class="breadcrumb__container">
-      <ul class="breadcrumbs">
-        <li class="breadcrumb">
-          <a href="index.html"><span>Home</span></a>
-        </li>
-        <li class="breadcrumb">
-          <span>로그인</span>
-        </li>
-      </ul>
-    </div>
-    <!-- breadcrumb end -->
+          <!-- breadcrumb start -->
+          <div class="breadcrumb__container">
+            <ul class="breadcrumbs">
+              <li class="breadcrumb">
+                <a href="index.html"><span>Home</span></a>
+              </li>
+              <li class="breadcrumb">
+                <span>로그인</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </section>
 
     <!-- Sign__in start -->
     <section class="sign__section">
-      
+
       <!-- Sign_in -->
       <div class="sign__in__container">
         <h2 class="sign__title">로그인</h2>
@@ -143,25 +158,26 @@
             <div class="sign__input">
               <label class="input__title">비밀번호</label>
               <input class="input__place" type="password" placeholder="비밀번호를 입력해주세요">
-          </div>
-          
-          <div class="password__save__box">
-            <div>
+            </div>
+
+            <div class="password__save__box">
+              <div>
                 <input class="input__checkbox" type="checkbox">
                 <span>암호를 저장할까요?</span>
+              </div>
+              <div class="sign__in__btn">
+                <button type="button" onclick="location.href='#!'">
+                  <a class="forgot__pw" href="#!">비밀번호 찾기</a>
+                </button>
+                <button type="button" onclick="location.href='./sign_up.html'">
+                  <a class="sign__up__go" href="#!">회원가입하기</a>
+                </button>
+              </div>
             </div>
-            <div class="sign__in__btn">
-              <button>
-                <a class="forgot__pw" href="#!">비밀번호 찾기</a>
-              </button>
-              <button>
-                <a class="sign__up__go" href="./sign_up.html">회원가입하기</a>
-              </button>
-            </div>
-        </div>
 
         </form>
-        <button class="sign__button"><a class="sign__btn" href="#!">로그인</a></button>
+        <button class="sign__button" type="button" onclick="location.href='#!'">
+          <a class="sign__btn" href="#!">로그인</a></button>
       </div>
     </section>
 
@@ -172,7 +188,7 @@
     <!-- Arrow Up -->
     <aside id="arrow">
       <a id="arrow-up" href="#home" title="back to top">
-          <span id="arrow-up-value">&#8593;</span>
+        <span id="arrow-up-value">&#8593;</span>
       </a>
     </aside>
 
@@ -290,7 +306,7 @@
       </p>
     </div>
   </footer>
-  
+
 </body>
 
 </html>
